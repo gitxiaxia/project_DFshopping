@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+
+		<style>
+			.main_l {
+				width: 862px;
+				height: 456px;
+				margin: 0 auto;
+			}
+			
+			.form {
+				padding-left: 125px;
+				padding-top: 60px;
+			}
+			
+			.item_0 {
+				padding: 5px 0;
+				/*短信验证 input*/
+				position: relative;
+			}
+			
+			span.get_code {
+				display: inline-block;
+				width: 110px;
+				height: 33px;
+				z-index: 10;
+				position: absolute;
+				text-decoration: none, ;
+				color: #000;
+				display: none;
+				background: #239cdc;
+			}
+			/*标题*/
+			
+			.label {
+				float: left;
+				width: 110px;
+				padding-right: 10px;
+				height: 35px;
+				line-height: 35px;
+				text-align: right;
+				font-size: 14px;
+				font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+			}
+			/*//输入内容*/
+			
+			.field {
+				float: left;
+			}
+			/*//提示*/
+			
+			.reminder {
+				float: left;
+				DISPLAY: inline;
+				MARGIN-LEFT: 7px;
+				PADDING: 0px 5px 0px 5px;
+				BACKGROUND: #fff4f5;
+				BORDER: #f0b8be 1px solid;
+				WIDTH: 170px;
+				HEIGHT: 33px;
+			}
+			/*手机号码输入错误提示框*/
+			
+			.verify_status {
+				float: left;
+				display: inline-block;
+			}
+			/*验证码提示框*/
+			
+			.hide {
+				display: block;
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+			}
+			/*宽高自适应*/
+			
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				overflow: hidden;
+				clear: both;
+				visibility: hidden;
+				zoom: 1;
+			}
+			/*获取验证码外框*/
+			
+			.get_code_embellish {
+				float: left;
+				width: 110px;
+				height: 33px;
+				border: 1px solid #ccc;
+				margin-left: 8px;
+				font-size: 12px;
+				line-height: 33px;
+				text-align: center;
+				box-shadow: 0 0 6px #ccc;
+				color: #353535;
+				cursor: default;
+				position: relative;
+			}
+			/*点击获取验证码*/
+			
+			.get_code {
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				position: absolute;
+				color: #fff;
+				display: none;
+				background: #239cdc;
+			}
+			/*点击后显示验证码剩余秒*/
+			
+			.hide {
+				display: block;
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+				text-align: center;
+				line-height: 33px;
+				color: #000;
+				background: #fff;
+			}
+			
+			input.number,
+			input.note {
+				-webkit-appearance: none;
+				background: #fff;
+				font-size: 16px;
+				height: 20px;
+				line-height: 20px;
+				width: 258px;
+				padding: 6px 30px 7px 10px;
+				border: 1px solid #c9c8cf;
+				VERTICAL-ALIGN: middle;
+			}
+			
+		
+			/*清除number默认样式*/
+			
+			input.number::-webkit-textfield-decoration-container {
+				background-color: #fff;
+			}
+			
+			input.number::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+			
+			input.number::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+			}
+		</style>
+
+		<!--js-->
+		<script src="../lib/jquery-3.2.1.js"></script>
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				//设置全局变量
+				var user = /^[1][3,4,5,7,8][0-9]{9}$/;
+				//高亮
+				$(".number,.note").focus(function() {
+					$(this).css({
+						borderColor: '#239cdc',
+						boxShadow: '0 0 6px #A6E0FF'
+					});
+				});
+
+				//清除高亮
+				$(".number,.note").blur(function(e) {
+					var target = e.target;
+					//获取元素 用户写入状态
+					$(this).css({
+						borderColor: '#ccc',
+						boxShadow: 'none'
+					});
+
+				})
+				//监听事件  用户名值改变时触发
+				$(".number").bind("input propertychange", function() {
+
+					//号码长度不能大于11 位  否则输入不了
+					if($('.number').val().length > 11) {
+						/*利用字符串截取*/
+						var conten = $('.number').val();
+						var takeconten = conten.substr(0, 11);
+						$('.number').val(takeconten);
+
+					}
+					//正则判断
+					if($('.number').val().length == 11 && !user.test($('.number').val())) {
+						$('.number_reminder').html('请输入正确的11位手机号码')
+						return false;
+					}
+					//格式正确
+					if($('.number').val().length == 11 && user.test($('.number').val())) {
+
+						//显示发送验证码
+						$('.get_code').css({
+							display: "block",
+						})
+						$('.hide').css({
+							display: "none",
+						})
+
+						$('.get_code_embellish').css({
+							background: '#239cdc'
+						})
+
+					}
+
+				});
+				//手机号码验证 失去焦点时
+				$(".number").blur(function() {
+
+					if($('.number').val().length != 11) {
+						$('.number_reminder').html('请输入正确的11位手机号码')
+
+					}
+				})
+
+				//点击发送验证码  进行倒计时
+				$('.get_code').on('click', function() {
+
+					//计时开始
+					//这是倒计时长 60秒
+					var count_down = 60;
+					var timer = setInterval(function() {
+
+						$('.get_code').css({
+							display: 'none'
+						})
+
+						$('.hide').css({
+							display: "block",
+						})
+
+						$('.hide').html(+count_down + "秒后重新发送");
+						//变量跟新
+						count_down--;
+						//计时结束
+						if(count_down <= -1) {
+
+							window.clearInterval(timer);
+							$('.hide').css({
+								display: "none",
+							})
+
+							$('.get_code').css({
+								display: 'block',
+							})
+
+						}
+
+					}, 1000);
+
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--右边-->
+		<div class="main_l">
+
+			<div class="form">
+				<!--1-->
+				<div class="item_0 clearfix">
+
+					<div class="label">
+						*手机号码:
+					</div>
+					<div class="field">
+						<input type="number" class="number" />
+					</div>
+					<div class="verify_status number_reminder"></div>
+					<!--提示-->
+				</div>
+				<!--2-->
+				<div class="item_0 clearfix">
+					<div class="label">
+						*短信验证码:
+					</div>
+					<div class="field">
+						<input type="text" class="note" style=" width: 138px;" />
+					</div>
+					<div class="clearfix  get_code_embellish">
+						<span class="hide">免费获取验证码</span>
+						<a class="get_code">免费获取验证码</a>
+					</div>
+
+					<div class="verify_status get_code_reminder"></div>
+					<!--提示-->
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>登录东方购物</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/com_head.css" />
+		<link rel="stylesheet" type="text/css" href="../css/com_footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../lib/jQuery.wdcarousel/jQuery.wdcarousel.css" />
+
+	</head>
+
+	<body>
+		<!--js写入HTML-->
+		<div id="head_box"></div>
+
+		<!-- 内容-->
+		<div class="main_box">
+			<div class="container clearfix">
+				<div class="main">
+
+					<!--轮播图-->
+					<div class="main_banner fl"></div>
+
+					<!--login-->
+					<div class="form_wrap fr">
+						<div class="form">
+							<!--1-->
+							<div class="item_0 clearfix">
+								<!--标题-->
+								<div class="label clearfix">
+									<span class="title fl">登陆名</span>
+									<span class="user_tips verify_status" style="">&nbsp;&nbsp;</span>
+
+								</div>
+								<!--内容-->
+								<div class="field">
+									<input type="text" class="username" id="loginid" />
+									<span class="delete">X</span>
+									<!--X-->
+								</div>
+
+							</div>
+							<!--1-->
+							<div class="item_0 clearfix">
+								<!--标题-->
+								<div class="label clearfix">
+									<span class="title">密码</span>
+									<span class="pwd_tips verify_status" style="">&nbsp;&nbsp;</span>
+									<!--密码报错-->
+									<a class="faq" href="javascript:internet_pw_search();">忘记密码?</a>
+
+								</div>
+								<!--内容-->
+								<div class="field">
+									<input type="password" class="password" id="password" />
+									<span class="delete">X</span>
+									<!--X-->
+								</div>
+
+							</div>
+							<!--1-->
+							<div class="item_0 clearfix">
+								<!--标题-->
+								<div class="label clearfix">
+									<span class="title">验证码</span>
+									<span class="verifyCode_tips fl verify_status" ></span><!--验证码报错-->
+									
+
+								</div>
+								<!--内容-->
+								<div class="field">
+									<input type="text" class="valcode" id="security" />
+									<span class="Random_code">1165</span>
+									<span class="change">看不清换一张</span>
+
+								</div>
+
+							</div>
+							<!--1-->
+							<div class="submit_bottun">
+								<img src="https://www.ocj.com.cn/common/images/passport/newlogin.submit.jpg" class="submit">
+							</div>
+							<!--1-->
+							<div class="item clear_float">
+								<div class="field field_remember clearfix">
+									<label><input type="checkbox" id="checkbox"> &nbsp;记住登录名</label>
+									<a href="register.html" class="register fr">免费注册</a>
+									
+								</div>
+							</div>
+							<!--1-->
+							<div class="else">
+								其他链接方式:
+								<div class="links">
+									<a href="#"><img src="https://www.ocj.com.cn/common/images/passport/img.weibo.mini.gif"></a>
+									<a href="#" title="支付宝"><img src="https://www.ocj.com.cn/common/images/passport/img.alipay.mini.gif"></a>
+									<a href="#" title="QQ登录"><img src="https://www.ocj.com.cn/common/images/passport/Connect_logo_1.png" ></a>
+									<a href="#" title="微信登录"><img src="https://www.ocj.com.cn/image_site/weixin/WEIXIN.png" ></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+
+
+		<!--js写入HTML-->
+		<div id="footer_box"></div>
+		<!--js-->
+		<script src="../lib/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../lib/jQuery.wdcarousel/jQuery.wdcarousel.js"></script>
+		<script type="text/javascript" src="../lib/common.js"></script>
+			
+		
+		<script type="text/javascript" src="../js/login.js"></script>
+		<script type="text/javascript" src="../js/com_head.js"></script>
+
+	</body>
+
+</html>

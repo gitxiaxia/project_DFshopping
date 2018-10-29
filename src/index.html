@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>东方购物首页</title>
+		<!--清单：
+			１.商城优选：店铺名字、商品信息没有更改
+			２.二级导航maks部分没有完成
+			3.导航条下面胡轮播没有写
+			4.团购    and 全球购  轮播动画没有做
+			5.固定客服轮播没有做
+			6.首页登陆弹窗没有做
+		    7.底部会员特价没有做
+		    8.头部定位没有做
+		    9.logo旁边胡轮播图没有做
+		    10.食品饮料胡小图标动画没有做
+		
+		-->
+
+		<!--logo-->
+		<link rel="shortcut icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png">
+		<!--样式-->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/com_head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/com_footer.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+
+		<link rel="stylesheet" type="text/css" href="lib/jQuery.wdcarousel/jQuery.wdcarousel.css" />
+		<script src="lib/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="lib/jQuery.wdcarousel/jQuery.wdcarousel.js"></script>
+		<script type="text/javascript" src="js/com_head.js"></script>
+
+	</head>
+
+	<body>
+		<!--公共头部-->
+		<div class="headBox">
+			<!--头部-->
+			<div class="top">
+				<div class="container clearfix">
+					<div class="fl top_l">
+						<ul class="ul1 clearfix">
+							<li> <span>欢迎光临 OCJ.COM.CN</span></li>
+							<li>
+								<a href="http://localhost:1010/src/html/login.html">登录</a>
+							</li>
+							<li>
+								<a href="http://localhost:1010/src/html/register.html">注册</a>
+							</li>
+							<li><span>送货至：</span></li>
+							<li class="location"><img src="img/top4.png" /></li>
+							<li><span>上海</span></li>
+							<li>
+								<a href="#">[更换]</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="fr top_r">
+
+						<div class="fl my">
+							<div><img src="img/top1.png" />
+								<a href="#">我的购物</a><img src="img/top7.png" /></div>
+							<!--二级导航-->
+							<ul class="top_mask_ul">
+								<li>
+									<a href="#">订单查询</a>
+								</li>
+								<li>
+									<a href="#">积分查询</a>
+								</li>
+								<li>
+									<a href="#">抵用券查询</a>
+								</li>
+								<li>
+									<a href="#">我的收藏</a>
+								</li>
+								<li>
+									<a href="#">修改信息</a>
+								</li>
+							</ul>
+						</div>
+						<div class=" fl"><img src="img/top6.png" />
+							<a href="#">我的购物</a>
+						</div>
+						<div class=" fl"><img src="img/top2.png" />
+							<a href="#">我的购物</a>
+						</div>
+						<div class="fl"><img src="img/top5.png" />
+							<a href="#">我的购物</a>
+						</div>
+						<div class="fl weixin"><img src="img/top3.png" />
+							<a href="#">微信</a> <img src="img/top8.png" class="top_mask_img" /></div>
+					</div>
+				</div>
+			</div>
+			<!--头部END-->
+
+			<!--logo-->
+			<div class="logo">
+				<div class="container clearfix">
+
+					<div class="logo_l fl">
+						<h1>
+								
+								<a href="#" class="logo1"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/tiplogo/cplogo0.png"/></a>
+								<!---->
+								<a href="#" class="logo2"><img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9903/11464/1_20180731163409_3.jpg"/></a>
+							</h1>
+					</div>
+
+					<div class="logo_c fl">
+						<!--搜索框-->
+						<div class="input clearfix">
+							<input type="text" name="sous" class="fl" /><button class="fr">搜索</button>
+
+						</div>
+						<!-- 搜索框下边的推荐 -->
+						<div class="hotSell clearfix">
+							<div class="hotSell_l fl">
+								<a href="#"> 玩嗨全球购</a>
+								<a href="#">新人专享</a>
+								<a href="#">反季风暴</a>
+								<a href="#">MarieBonne</a>
+							</div>
+							<div class="hotSell_r fr">
+								<span><a href="#">销售排行榜</a></span>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="logo_r fr">
+						<!--购物车-->
+						<div class="car fl "><span class="car_l fl"></span>
+							<a href="#" class="car_c fl">购物区车</a><span class="car_r fr"></span>
+							<div class="qty"><span>0</span></div>
+						</div>
+						<div class="car_show"><span>购物车中还没有商品，赶紧选购吧！</span></div>
+						<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180328193915_54.jpg" class="fr" />
+					</div>
+
+				</div>
+
+			</div>
+			<!--logoEND-->
+
+			<!--nav-->
+			<div class="nav">
+				<div class="container clearfix">
+					<div class="nav_l fl">
+						<h2>全部商品分类</h2></div>
+					<div class="nav_c fl clearfix">
+						<ul class="clearfix">
+							<li>
+								<a href="#" class="last">首页</a>
+							</li>
+							<li>
+								<a href="#">TV购物</a>
+							</li>
+							<li>
+								<a href="#">团购</a>
+							</li>
+							<li>
+								<a href="#">全球购</a>
+							</li>
+							<li>
+								<a href="#">商城</a>
+							</li>
+							<li>
+								<a href="#">特惠活动</a>
+							</li>
+							<li>
+								<a href="#">会员俱乐部</a>
+							</li>
+							<li>
+								<a href="#">企业官网</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!--navEND-->
+		</div>
+		<!--公共头部END-->
+
+		<!--nav下面的轮播图-->
+		<div class="navContent">
+
+			<div class="container clearfix">
+				<!--导航-->
+				<div class="navigate fl">
+					<!--1-->
+					<div class="navigate_0">
+
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">厨房用具、厨房电器</a>
+						</div>
+
+						<!--隐藏-->
+						<div class="mask clearfix">
+							<div class="mask_l fl">
+								<!--第一个-->
+								<div class="mask_0">
+									<h3>厨房电器</h3>
+									<ul>
+										<!--还没有做hover效果-->
+										<li>
+											<a href="#">电水壶 /电水瓶</a>
+											<a href="#">电磁炉</a>
+											<a href="#">电饭煲</a>
+											<a href="#">榨汁/搅拌</a>
+										</li>
+
+										<li>豆浆机 电压力煲 酸奶机 面包机/多士炉</li>
+										<li>微波炉/烤箱 抽油烟机/灶具 煮蛋</li>
+										<li>电饼铛/烧烤 盘碗筷消毒 咖啡机</li>
+										<li>DIY小家电 电炖/电蒸锅</li>
+
+									</ul>
+								</div>
+								<!--第二个-->
+								<div class="mask_0">
+									<h3>厨房用品</h3>
+									<ul>
+										<!--还没有做hover效果-->
+										<li>
+											<a href="#">炒锅</a>
+											<a href="#">煎锅/平底锅</a>
+											<a href="#"> 汤/奶锅 </a>
+											<a href="#">煮锅/炖锅</a>
+										</li>
+										<li>
+											<a href="#"> 套锅</a>
+											<a href="#">厨盆水槽 </a>
+											<a href="#">刀具</a>
+											<a href="#"> 砧板</a>
+											<a href="#"> 厨房用具</a>
+										</li>
+										<li>
+											<a href="#"> 厨房收纳</a>
+										</li>
+
+									</ul>
+								</div>
+								<!--第三个-->
+								<div class="mask_0">
+									<h3>餐具容器</h3>
+									<ul>
+										<!--还没有做hover效果-->
+										<li>
+											<a href="#">保温盒/壶 </a>
+											<a href="#">保温杯</a>
+											<a href="#"> 保鲜容器 </a>
+											<a href="#">餐具</a>
+										</li>
+										<li>
+											<a href="#"> 水/茶具 </a>
+											<a href="#">酒具</a>
+											<a href="#"> 果盘 </a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="mask_r fr">
+								<div>
+									<img src="img/navContent1.jpg" class="fr" />
+									<img src="img/navContent3.png" class="fr" />
+								</div>
+								<div>
+									<img src="img/navContent2.jpg" class="fr" />
+									<img src="img/navContent4.png" class="fr" />
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!--2-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">家居、家饰</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--3-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">食品饮料</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--4-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">手机、数码、电脑</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--5-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">家用电器</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--6-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">化妆品、洗护沐浴</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--7-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">服装、鞋靴、箱包、配饰</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--8-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">母婴、玩具、宠物</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--9-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">珠宝、收藏、钟表</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--10-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">保健品、户外运动、器械</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+					<!--11-->
+					<div class="navigate_0">
+						<!--hover-->
+						<div class="hover">
+							<i>夏</i>
+							<a href="#">汽车、旅游、保险、服务</a>
+						</div>
+						<!--还有mask没有写结构-->
+					</div>
+
+					<!--较为特殊的四个hover部分-->
+					<div class="special">
+						<!--TV购物-->
+						<div class="specialS TVGW">
+
+							<!--还有mask没有写结构-->
+							<!--隐藏-->
+							<div class="mask clearfix">
+								<div class="mask_l fl">
+									<!--第一个-->
+									<div class="mask_0">
+										<h3>厨房电器</h3>
+										<ul>
+											<!--还没有做hover效果-->
+											<li>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#" class="last">榨汁/搅拌</a>
+											</li>
+
+											<li>
+												<a href="#">豆浆机</a>
+												<a href="#"> 电压力煲</a>
+												<a href="#" class="last">酸奶机</a>
+												<a href="#"> 面包机/多士炉</a>
+											</li>
+											<li>
+												<a href="#">微波炉/烤箱</a>
+												<a href="#" class="last">抽油烟机/灶具</a>
+												<a href="#">煮蛋</a>
+											</li>
+											<li>
+												<a href="#">电饼铛/烧烤</a>
+												<a href="#">盘碗筷消毒 </a>
+												<a href="#">咖啡机</a>
+											</li>
+											<li>
+												<a href="#">DIY小家电</a>
+												<a href="#">电炖/电蒸锅</a>
+											</li>
+
+										</ul>
+									</div>
+									<!--第二个-->
+									<div class="mask_0">
+										<h3>厨房用品</h3>
+										<ul>
+											<!--还没有做hover效果-->
+											<li>
+												<a href="#" class="last">炒锅</a>
+												<a href="#">煎锅/平底锅</a>
+												<a href="#"> 汤/奶锅 </a>
+												<a href="#">煮锅/炖锅</a>
+											</li>
+											<li>
+												<a href="#"> 套锅</a>
+												<a href="#">厨盆水槽 </a>
+												<a href="#">刀具</a>
+												<a href="#"> 砧板</a>
+												<a href="#"> 厨房用具</a>
+											</li>
+											<li>
+												<a href="#"> 厨房收纳</a>
+											</li>
+
+										</ul>
+									</div>
+									<!--第三个-->
+									<div class="mask_0">
+										<h3>餐具容器</h3>
+										<ul>
+											<!--还没有做hover效果-->
+											<li>
+												<a href="#">保温盒/壶 </a>
+												<a href="#">保温杯</a>
+												<a href="#" class="last"> 保鲜容器 </a>
+												<a href="#">餐具</a>
+											</li>
+											<li>
+												<a href="#"> 水/茶具 </a>
+												<a href="#">酒具</a>
+												<a href="#"> 果盘 </a>
+											</li>
+										</ul>
+									</div>
+
+								</div>
+								<div class="mask_r fr">
+									<div>
+										<img src="img/navContent1.jpg" class="fr" />
+										<img src="img/navContent3.png" class="fr" />
+									</div>
+									<div>
+										<img src="img/navContent2.jpg" class="fr" />
+										<img src="img/navContent4.png" class="fr" />
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!--团购-->
+						<div class="specialS TG">
+							<div class="solid"></div>
+							<!--还有mask没有写结构-->
+						</div>
+						<!--全球购-->
+						<div class="specialS QQG">
+							<div class="solid"></div>
+						</div>
+						<!--15-->
+						<div class="specialS SC">
+							<div class="solid"></div>
+							<!--还有mask没有写结构-->
+						</div>
+
+					</div>
+
+				</div>
+
+				<!--中间-->
+				<div class="hotSell fl">
+					<div class="live">还没有做效果</div>
+					<div class="banner_box fl">
+						<div class="banner"></div>
+					</div>
+					<div class="smallHot">
+						<div class="smallHot_t"></div>
+
+						<div class="smallHot_b"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--nav下面的轮播图END-->
+
+		<!--主播推荐-->
+		<div class="anchor_recommend">
+			<div class="container clearfix">
+				<div class="title">
+					主播推荐<span><a href="#">TV购物 热卖排行</a></span>
+				</div>
+				<!--文字与图片介绍-->
+				<div class="introduction fl">
+					<div class="intro_banner"></div>
+
+					<div class="introduce">
+						<a href="#">
+							夏普(SHARP) LCD-45SF478A 45英寸智能液晶电视机
+						</a>
+					</div>
+					<div class="qty">￥<span>2099</span></div>
+					<div class="explain">
+						<h2 class="hTitle">沈方明推荐：</h2>
+						<div class="explain_text">
+							1.智能语音，2.安卓智能网络电视，爱奇艺海量视频资源， 3.USB\HDMI接口，4.LED液晶 5.送三个月的爱奇艺会员
+						</div>
+					</div>
+				</div>
+
+				<!--商品列表-->
+				<div class="goodslist fr">
+
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/2687/15242687L.jpg
+						次玛陀 西藏那曲冬虫夏草7克35根礼盒装（2018新草）
+						2280-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/2687/15242687L.jpg" /></a>
+						<a href="#" class="text_links">次玛陀 西藏那曲冬虫夏草7克35根礼盒装（2018新草）</a>
+						<p><span>￥</span>2280</p>
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/17/8948/15178948-L.jpg
+						富培美 木质地板精油清洁养护特卖组（5+2+1）(送喷水拖)
+						200-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/8948/15178948-L.jpg" /></a>
+						<a href="#" class="text_links">富培美 木质地板精油清洁养护特卖组（5+2+1）(送喷水拖)</a>
+						<p><span>￥</span>200</p>
+
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0 goods_last">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/17/2167/15172167-L.jpg
+						融氏 纯玉米胚芽油超值特惠组
+						199-->
+
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/2167/15172167-L.jpg" /></a>
+						<a href="#" class="text_links">融氏 纯玉米胚芽油超值特惠组</a>
+						<p><span>￥</span>199</p>
+
+					</div>
+					<div class="goods_0 goods_botton">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/22/1560/15221560-L.jpg
+						洁宜佳 厨卫三宝全家福12+4+10
+						199-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/22/1560/15221560-L.jpg" /></a>
+						<a href="#" class="text_links">洁宜佳 厨卫三宝全家福12+4+10</a>
+						<p><span>￥</span>199</p>
+
+					</div>
+					<div class="goods_0 goods_botton">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/6220/15246220-L.jpg
+						香娜露儿 澳洲进口羊胎素绵羊油(送太阳镜)
+						238-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/6220/15246220-L.jpg" /></a>
+						<a href="#" class="text_links">香娜露儿 澳洲进口羊胎素绵羊油(送太阳镜)</a>
+						<p><span>￥</span>238</p>
+
+					</div>
+					<div class="goods_0 goods_botton goods_last">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/4824/15164824-L.jpg
+						馨之屋 水精灵12+1套装加赠洗衣机
+						298-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/4824/15164824-L.jpg" /></a>
+						<a href="#" class="text_links">馨之屋 水精灵12+1套装加赠洗衣机</a>
+						<p><span>￥</span>298</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--主播推荐END-->
+		<!--团购-->
+		<div class="groupon">
+			<div class="container clearfix">
+				<div class="title">团购<span><a href="">低至399元起</a></span></div>
+				<!--主图-->
+				<div class="master_map fl">
+					<div class="links_img">
+						<a href="#">
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/10704/12343/1_20180815172523_2.jpg" />
+						</a>
+					</div>
+
+				</div>
+
+				<!--商品列表-->
+
+				<div class="goodslist fr">
+
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/5162/15245162L.jpg
+						阿蓓莉 西班牙原装进口特级初榨橄榄油1Lx4瓶
+						3799-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/5162/15245162L.jpg" /></a>
+						<a href="#" class="text_links">阿蓓莉 西班牙原装进口特级初榨橄榄油1Lx4瓶</a>
+						<p><span>￥</span>3799</p>
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/23/0609/15230609L.jpg
+						TipTop 曲奇味冰淇淋2L 大桶装家庭装 新西兰原装进口雪糕
+						178-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/23/0609/15230609L.jpg" /></a>
+						<a href="#" class="text_links">TipTop 曲奇味冰淇淋2L 大桶装家庭装 新西兰原装进口雪糕</a>
+						<p><span>￥</span>178</p>
+
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0 goods_last">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/23/4054/15234054L.jpg
+						爱敬(AEKYUNG) 韩国进口爱敬爱纪二十之精华粉底霜组合装
+						218-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/23/4054/15234054L.jpg" /></a>
+						<a href="#" class="text_links">爱敬(AEKYUNG) 韩国进口爱敬爱纪二十之精华粉底霜组合装</a>
+						<p><span>￥</span>218</p>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--团购END-->
+		<!--全球购-->
+		<div class="Metao">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">全球购<span><a href="">产地直采 正品保证</a></span></div>
+				<!--主图-->
+				<div class="master_map fl">
+					<!--利用js写入轮播图-->
+					<div class="links_img ">
+						<div class="Metao_banner">
+
+						</div>
+					</div>
+
+				</div>
+
+				<!--商品列表-->
+
+				<div class="goodslist fr">
+
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/0976/15240976L.jpg
+						VAPE 爽肤喷雾hellokitty桃子香200ml
+						39-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/0976/15240976L.jpg" /></a>
+						<a href="#" class="text_links">VAPE 爽肤喷雾hellokitty桃子香200ml</a>
+						<p><span>￥</span>39</p>
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/0799/15200799L.jpg
+						EVE LOM 经典洁面霜 100ml
+						385-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/0799/15200799L.jpg" /></a>
+						<a href="#" class="text_links">EVE LOM 经典洁面霜 100ml</a>
+						<p><span>￥</span>385</p>
+
+					</div>
+					<!--单个商品1-->
+					<div class="goods_0 goods_last">
+						<!--	https://cdnimg.ocj.com.cn/item_images/item/15/20/2279/15202279L.jpg
+						潘多拉(PANDORA) 闪耀手链 590524CZ-1
+						349-->
+						<a href="#" class="image_links"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/2279/15202279L.jpg" /></a>
+						<a href="#" class="text_links">潘多拉(PANDORA) 闪耀手链 590524CZ-1</a>
+						<p><span>￥</span>349</p>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--全球购END-->
+
+		<!--中央轮播图-->
+		<div class="centers">
+			<div class="container">
+				<div class="banner_box">
+					<div class="centers_banner">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--中央轮播图END-->
+		<!--食品饮料-->
+		<div class="food_drink">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">
+					食品饮料 <span><a href="#">省心又美味</a></span>
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--左边 主要介绍-->
+				<div class="main_introduction fl">
+					<!--轮播图-->
+					<div class="banner_box">
+						<div class="food_drink_banner"></div>
+
+					</div>
+					<!--小图标列表-->
+					<div class="icon_box">
+						<!--1 - 6 -->
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101325_32.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101325_32.png" alt="" /></div>
+							<a href="#">滋补养生</a>
+						</div>
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101354_99.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101354_99.png" alt="" /></div>
+							<a href="#">新鲜蔬果</a>
+						</div>
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101522_96.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101522_96.png" alt="" /></div>
+							<a href="#">粮油干货</a>
+							<!--可数据生成-->
+						</div>
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101440_28.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101440_28.png" alt="" /></div>
+							<a href="#">生鲜食材</a>
+							<!--可数据生成-->
+						</div>
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101506_75.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101506_75.png" alt="" /></div>
+							<a href="#">酒水饮料</a>
+							<!--可数据生成-->
+						</div>
+						<div class="icon_0">
+							<!--http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101623_25.png-->
+							<div class="icon_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101623_25.png" alt="" /></div>
+							<a href="#">休闲食品</a>
+							<!--可数据生成-->
+						</div>
+
+					</div>
+
+				</div>
+				<!--左边商品列表-->
+				<div class="food_drink_goodslist fr">
+					<!--单个商品-->
+					<div class="goods_0">
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/5609/15195609-L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">神象 酸梅汤（15克*10袋*4盒）</a>
+						</div>
+						<p><span>￥</span>2980</p>
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/19/9358/15199358L.jpg
+						阿格利司 特级初榨橄榄油5000ml组合
+						476-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/9358/15199358L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">阿格利司 特级初榨橄榄油5000ml组合</a>
+						</div>
+						<p><span>￥</span>476</p>
+
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/21/8383/15218383L.jpg
+						农百鲜(NONBASY) 散养童子鸡750g*4 加赠童子鸡
+						188-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/21/8383/15218383L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">农百鲜(NONBASY) 散养童子鸡750g*4 加赠童子鸡</a>
+						</div>
+						<p><span>￥</span>188</p>
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/5061/15245061L.jpg
+						掌昕鲜 阳澄湖大闸蟹礼券 提货券588型 公蟹3.0两*3只
+						198-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/5061/15245061L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">掌昕鲜 阳澄湖大闸蟹礼券 提货券588型 公蟹3.0两*3只</a>
+						</div>
+						<p><span>￥</span>198</p>
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/56/85/23/568523L.jpg
+						南非进口优质鲜橙 20个/4.0-5.0kg 劲爆装
+						158-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/56/85/23/568523L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">南非进口优质鲜橙 20个/4.0-5.0kg 劲爆装</a>
+						</div>
+						<p><span>￥</span>158</p>
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/13/6865/15136865L.jpg
+						晓芹 大连晓芹淡干海参100克礼盒装（25－30头）
+						958-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/13/6865/15136865L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">晓芹 大连晓芹淡干海参100克礼盒装（25－30头）</a>
+						</div>
+						<p><span>￥</span>958</p>
+
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/13/6015/15136015L.jpg
+						拉美澳 新西兰原产牛腩500g*2+牛腱500g*2
+						188-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/13/6015/15136015L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">拉美澳 新西兰原产牛腩500g*2+牛腱500g*2</a>
+						</div>
+						<p><span>￥</span>188</p>
+					</div>
+					<!--单个商品-->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/13/6062/15136062L.jpg
+						恒寿堂 恒寿堂牌金乳钙划算装(金乳钙120片*3+金乳钙10
+						258-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/13/6062/15136062L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">恒寿堂 恒寿堂牌金乳钙划算装(金乳钙120片*3+金乳钙10</a>
+						</div>
+						<p><span>￥</span>258</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--食品饮料END-->
+
+		<!--家居厨房-->
+		<div class="home_kitchen">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">
+					家居厨房 <span><a href="#">变身大厨的好帮手</a></span>
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--左边 主要介绍-->
+				<div class="main_introduction fl">
+					<!--轮播图-->
+					<div class="banner_box">
+						<div class="home_kitchen_banner"></div>
+
+					</div>
+
+					<div class="introduction_content">
+						<!--推荐-->
+						<div class="recommend">
+							<a href="#">厨卫清洁12元起</a>
+							<a href="#">淋浴花洒低至99元</a>
+							<a href="#">保温杯79元起</a>
+						</div>
+						<!--logo-->
+						<div class="logo">
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150903140113_86.jpg" />
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150906182058_22.jpg" />
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150903140054_66.jpg" />
+						</div>
+						<!--链接-->
+						<div class="links">
+							<a href="#"> 榨汁/搅拌 </a>
+							<a href="#"> 被子</a>
+							<a href="#"> 收纳箱/盒</a>
+							<a href="#"> 家用护理</a>
+							<a href="#"> 淋浴花洒 </a>
+							<a href="#"> 五金工具 </a>
+							<a href="#"> 沙发 </a>
+							<a href="#"> 床/床垫</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--左边商品列表-->
+				<div class="home_kitchen_goodslist fr">
+					<!--单个商品 -->
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/21/9822/15219822L.jpg
+						神象 酸梅汤（15克*10袋*4盒）
+						2980-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/21/9822/15219822L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">神象 酸梅汤（15克*10袋*4盒）</a>
+						</div>
+						<p><span>￥</span>2980</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/9519/15209519L.jpg
+						空间优品 牛津布收纳箱66L方格三色6件套
+						219-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/9519/15209519L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">空间优品 牛津布收纳箱66L方格三色6件套</a>
+						</div>
+						<p><span>￥</span>219</p>
+
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/08/7944/15087944L.jpg
+						金加瀛二合一桑蚕长丝贡被*2（220*240,1000克+2
+						2688-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/08/7944/15087944L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">金加瀛二合一桑蚕长丝贡被*2（220*240,1000克+2</a>
+						</div>
+						<p><span>￥</span>2688</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/09/1349/15091349-L.jpg
+						富培美 水精灵8+8+6超值回馈
+						108-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/09/1349/15091349-L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">富培美 水精灵8+8+6超值回馈</a>
+						</div>
+						<p><span>￥</span>108</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/36/18/61/361861L.jpg
+						【电视团购】双立人TWIN Point鸿运当头刀具促销装
+						799-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/36/18/61/361861L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">【电视团购】双立人TWIN Point鸿运当头刀具促销装</a>
+						</div>
+						<p><span>￥</span>799</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/19/8237/15198237L.jpg
+						猫猫 澳洲进口羊毛羊毛被+羊毛床垫(五尺床组)
+						1058-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/8237/15198237L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">猫猫 澳洲进口羊毛羊毛被+羊毛床垫(五尺床组)</a>
+						</div>
+						<p><span>￥</span>1058</p>
+					</div>
+					<div class="goods_0">
+						<!--	https://cdnimg.ocj.com.cn/item_images/item/15/17/4356/15174356L.jpg
+						SIMELO 印象京都系列高真空大师焖烧锅4.5L(帝王金)
+						899-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/4356/15174356L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">SIMELO 印象京都系列高真空大师焖烧锅4.5L(帝王金)</a>
+						</div>
+						<p><span>￥</span>899</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/18/1242/15181242L.jpg
+						膳魔师无油空气炸锅
+						899-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/18/1242/15181242L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">膳魔师无油空气炸锅</a>
+						</div>
+						<p><span>￥</span>899</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--家居厨房END-->
+
+		<!--3C家电-->
+
+		<div class="appliance">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">
+					3C家电 <span><a href="#">强劲净化 简单呼吸</a></span>
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--左边 主要介绍-->
+				<div class="main_introduction fl">
+					<!--轮播图-->
+					<div class="banner_box">
+						<div class="appliance_banner"></div>
+
+					</div>
+					<!--内容-->
+					<div class="appliance_content">
+						<!--logo-->
+						<div class="logo fl">
+							<div>
+								<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20170324125208_91.jpg" alt="" /></a>
+							</div>
+							<div>
+								<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20170421100530_53.jpg" /></a>
+							</div>
+							<div>
+								<a href="#"> <img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20150731170915_38.jpg" /></a>
+							</div>
+							<div>
+								<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20150812212553_73.jpg" alt="" /></a>
+							</div>
+
+						</div>
+						<!--链接-->
+						<div class="links">
+							<div class="links_name">
+								<a href="#">净化器</a>
+							</div>
+							<div class="links_name">
+								<a href="#">净水器</a>
+							</div>
+
+							<div class="links_name">
+								<a href="#">空调</a>
+							</div>
+							<div class="links_name">
+								<a href="#">冰箱</a>
+							</div>
+							<div class="links_name">
+								<a href="#">电风扇</a>
+							</div>
+							<div class="links_name">
+								<a href="#">热水器</a>
+							</div>
+							<div class="links_name">
+								<a href="#">电视机</a>
+							</div>
+							<div class="links_name">
+								<a href="#">洗衣机</a>
+							</div>
+							<div class="links_name">
+								<a href="#">吸尘器</a>
+							</div>
+							<div class="links_name">
+								<a href="#">挂烫机/熨斗</a>
+							</div>
+							<div class="links_name">
+								<a href="#">除湿机</a>
+							</div>
+							<div class="links_name">
+								<a href="#">蒸汽清洁工具</a>
+							</div>
+							<div class="links_name">
+								<a href="#">加湿器</a>
+							</div>
+							<div class="links_name">
+								<a href="#">数码音箱</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--左边商品列表-->
+				<div class="appliance_goodslist fr">
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/17/6020/15176020L.jpg
+						神象 酸梅汤（15克*10袋*4盒）
+						2980-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/6020/15176020L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">神象 酸梅汤（15克*10袋*4盒）</a>
+						</div>
+						<p><span>￥</span>2980</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/22/6968/15226968L.jpg
+						华为(HUAWEI) 畅玩7C 5.99英寸全面屏 人脸解锁 1300万后置 高清双摄 金属机身 八核 全网通 3G+32G
+						999-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/22/6968/15226968L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">华为(HUAWEI) 畅玩7C 5.99英寸全面屏 人脸解锁 1300万后置 高清双摄 金属机身 八核 全网通 3G+32G</a>
+						</div>
+						<p><span>￥</span>999</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/24/1612/15241612L.jpg
+						极米无屏电视New Z4极光（XH07K）
+						3459-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/24/1612/15241612L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">极米无屏电视New Z4极光（XH07K）</a>
+						</div>
+						<p><span>￥</span>3459</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/22/2909/15222909-L.jpg
+						联想(Lenovo) 【爆款特惠】读秒开机超薄笔记本 120S(14英寸,Intel N3350,4G/128G固态,W10)
+						2698-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/22/2909/15222909-L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">联想(Lenovo) 【爆款特惠】读秒开机超薄笔记本 120S(14英寸,Intel N3350,4G/128G固态,W10)</a>
+						</div>
+						<p><span>￥</span>2698</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/22/7569/15227569L.jpg
+						小天鹅(LittleSwan) 7.2公斤净立方全自动波轮TB72-C1208(以旧换新)
+						998-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/22/7569/15227569L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">小天鹅(LittleSwan) 7.2公斤净立方全自动波轮TB72-C1208(以旧换新)</a>
+						</div>
+						<p><span>￥</span>998</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/18/2387/15182387L.jpg
+						海尔(Haier) 331升多门风冷无霜冰箱 BCD-331WDGQ （以旧换新）
+                        3799-->
+
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/18/2387/15182387L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">海尔(Haier) 331升多门风冷无霜冰箱 BCD-331WDGQ （以旧换新）</a>
+						</div>
+						<p><span>￥</span>3799</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/13/2903/15132903L.jpg
+						东芝(TOSHIBA) 40L1600C 40英寸 Regza高画质 全高清LED液晶电视
+						1498-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/13/2903/15132903L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank"> 东芝(TOSHIBA) 40L1600C 40英寸 Regza高画质 全高清LED液晶电视</a>
+						</div>
+						<p><span>￥</span>1498</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/19/9663/15199663-L.jpg
+						联想(Lenovo) 【爆款特惠】读秒开机超薄笔记本 120S(14英寸,Intel N3350,4G/128G固态,W10)
+						1699-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/9663/15199663-L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank"> 联想(Lenovo) 【爆款特惠】读秒开机超薄笔记本 120S(14英寸,Intel N3350,4G/128G固态,W10)</a>
+						</div>
+						<p><span>￥</span>1699</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--3C家电END-->
+
+		<!--时尚服饰-->
+
+		<div class="fashion">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">
+					时尚服饰 <span><a href="#">瑞士CURAPROX牙刷</a></span>
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--左边 主要介绍-->
+				<div class="main_introduction fl">
+					<!--轮播图-->
+					<div class="banner_box">
+						<div class="fashion_banner"></div>
+
+					</div>
+					<!--内容-->
+					<div class="fashion_content">
+						<div class="logo">
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20150817104318_93.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20160318212855_16.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170327164249_66.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20171019170739_68.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170327165036_77.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20151223192954_26.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170322133636_68.jpg" /> </div>
+							<div class="logo_img"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20151203173637_12.jpg" /> </div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--左边商品列表-->
+				<div class="appliance_goodslist fr">
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/5762/15205762L.jpg
+						神象 酸梅汤（15克*10袋*4盒）
+						2980-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/5762/15205762L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">神象 酸梅汤（15克*10袋*4盒）</a>
+						</div>
+						<p><span>￥</span>2980</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/21/6489/15216489-L.jpg
+						戴森(Dyson) 吹风机Supersonic HD01(限)
+						2965-->
+
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/21/6489/15216489-L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">戴森(Dyson) 吹风机Supersonic HD01(限)</a>
+						</div>
+						<p><span>￥</span>2965</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/1512/15201512L.jpg
+						欧舒丹(L'Occitane) 护手霜缤纷组合30ml3只装
+						225-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/1512/15201512L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">欧舒丹(L'Occitane) 护手霜缤纷组合30ml3只装</a>
+						</div>
+						<p><span>￥</span>225</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/0605/15200605L.jpg
+						博朗(BRAUN) 欧乐B/oral-b 充电式电动牙刷 D
+						259-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/0605/15200605L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">博朗(BRAUN) 欧乐B/oral-b 充电式电动牙刷 D</a>
+						</div>
+						<p><span>￥</span>259</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/09/6607/15096607L.jpg
+						澳格菲 红石榴鲜活焕采亮肤七件套买一套送一
+						798-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/09/6607/15096607L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">澳格菲 红石榴鲜活焕采亮肤七件套买一套送一</a>
+						</div>
+						<p><span>￥</span>798</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/0605/15200605L.jpg
+						佳韵依典(JIAYUNYIDIAN) 高腰弹力直筒休闲裤87
+						299-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/0605/15200605L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">佳韵依典(JIAYUNYIDIAN) 高腰弹力直筒休闲裤87</a>
+						</div>
+						<p><span>￥</span>299</p>
+					</div>
+					<div class="goods_0">
+						<!--						https://cdnimg.ocj.com.cn/item_images/item/15/14/3870/15143870L.jpg
+						艺韵肤 经典款女士超薄美体打底内衣6件组
+						188-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/14/3870/15143870L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">艺韵肤 经典款女士超薄美体打底内衣6件组188</a>
+						</div>
+						<p><span>￥</span>188</p>
+					</div>
+					<div class="goods_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/21/7491/15217491L.jpg
+						浪莎 浪莎男女秋冬鸿运十全十美系列内衣组
+						229-->
+						<img src="https://cdnimg.ocj.com.cn/item_images/item/15/21/7491/15217491L.jpg" alt="" />
+						<div class="details">
+							<a href="/detail/15195609?domain_id=8021_6741_9920_1_11195_WASTE" target="_blank">浪莎 浪莎男女秋冬鸿运十全十美系列内衣组</a>
+						</div>
+						<p><span>￥</span>229</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--时尚服饰END -->
+
+		<!--商城优选-->
+
+		<div class="mall_optimization">
+			<div class="container clearfix">
+				<!--标题-->
+				<div class="title">
+					商城优选
+					<!--<span><a href="#">瑞士CURAPROX牙刷</a></span>-->
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--店铺1-->
+				<div class="boutique_0  boutique_left">
+					<!--头部-->
+					<div class="boutique_head clearfix">
+						<!--logo   头部左边-->
+						<div class="logo fl">
+
+							<div class="boutique_title">
+								<a href="#"> 好雄食品专营店</a>
+							</div>
+							<div class="more"><span><a href="#">更多美味更多品味</a></span></div>
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/4_20180409141520_43.jpg" />
+						</div>
+						<!--内容  头部右边-->
+						<div class="content fl">
+							<!-- [商城]豪雄 薄皮核桃250gx3袋
+                             https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg
+                             88-->
+							<a href="#" class="liks_img fr"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg" /></a>
+							<div class="qty fr">
+								<a href="#">[商城]豪雄 薄皮核桃250gx3袋</a><br />
+								<p>￥<span>88</span></p>
+							</div>
+
+						</div>
+					</div>
+					<!--底部-->
+					<div class="boutique_footer clearfix">
+						<!--单个商品-->
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg
+							[商城]豪雄 黄冰糖454gx4袋
+							89-->
+
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg" />
+							<a href="#">[商城]豪雄 黄冰糖454gx4袋</a><br />
+							<p>￥<span>89</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg
+							豪雄 椴背黑木耳200gx2包
+                            128-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg" />
+							<a href="#">豪雄 椴背黑木耳200gx2包</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg
+							[商城]豪雄 茶树菇200gx2袋
+							118-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg" />
+							<a href="#">[商城]豪雄 茶树菇200gx2袋</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--店铺1  END-->
+
+				<!--店铺2-->
+				<div class="boutique_0  boutique_right">
+					<!--头部-->
+					<div class="boutique_head clearfix">
+						<!--logo   头部左边-->
+						<div class="logo fl">
+
+							<div class="boutique_title">
+								<a href="#"> 好雄食品专营店</a>
+							</div>
+							<div class="more"><span><a href="#">更多美味更多品味</a></span></div>
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/4_20180409141520_43.jpg" />
+						</div>
+						<!--内容  头部右边-->
+						<div class="content fl">
+							<!-- [商城]豪雄 薄皮核桃250gx3袋
+                             https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg
+                             88-->
+							<a href="#" class="liks_img fr"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg" /></a>
+							<div class="qty fr">
+								<a href="#">[商城]豪雄 薄皮核桃250gx3袋</a><br />
+								<p>￥<span>88</span></p>
+							</div>
+
+						</div>
+					</div>
+					<!--底部-->
+					<div class="boutique_footer clearfix">
+						<!--单个商品-->
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg
+							[商城]豪雄 黄冰糖454gx4袋
+							89-->
+
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg" />
+							<a href="#">[商城]豪雄 黄冰糖454gx4袋</a><br />
+							<p>￥<span>89</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg
+							豪雄 椴背黑木耳200gx2包
+                            128-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg" />
+							<a href="#">豪雄 椴背黑木耳200gx2包</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg
+							[商城]豪雄 茶树菇200gx2袋
+							118-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg" />
+							<a href="#">[商城]豪雄 茶树菇200gx2袋</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+
+					</div>
+				</div>
+				<!--店铺２END-->
+
+				<!--店铺3-->
+				<div class="boutique_0  boutique_left">
+					<!--头部-->
+					<div class="boutique_head clearfix">
+						<!--logo   头部左边-->
+						<div class="logo fl">
+
+							<div class="boutique_title">
+								<a href="#"> 好雄食品专营店</a>
+							</div>
+							<div class="more"><span><a href="#">更多美味更多品味</a></span></div>
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/4_20180409141520_43.jpg" />
+						</div>
+						<!--内容  头部右边-->
+						<div class="content fl">
+							<!-- [商城]豪雄 薄皮核桃250gx3袋
+                             https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg
+                             88-->
+							<a href="#" class="liks_img fr"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg" /></a>
+							<div class="qty fr">
+								<a href="#">[商城]豪雄 薄皮核桃250gx3袋</a><br />
+								<p>￥<span>88</span></p>
+							</div>
+
+						</div>
+					</div>
+					<!--底部-->
+					<div class="boutique_footer clearfix">
+						<!--单个商品-->
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg
+							[商城]豪雄 黄冰糖454gx4袋
+							89-->
+
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg" />
+							<a href="#">[商城]豪雄 黄冰糖454gx4袋</a><br />
+							<p>￥<span>89</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg
+							豪雄 椴背黑木耳200gx2包
+                            128-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg" />
+							<a href="#">豪雄 椴背黑木耳200gx2包</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg
+							[商城]豪雄 茶树菇200gx2袋
+							118-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg" />
+							<a href="#">[商城]豪雄 茶树菇200gx2袋</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+
+					</div>
+				</div>
+				<!--店铺3END-->
+
+				<!--店铺4-->
+				<div class="boutique_0  boutique_right">
+					<!--头部-->
+					<div class="boutique_head clearfix">
+						<!--logo   头部左边-->
+						<div class="logo fl">
+
+							<div class="boutique_title">
+								<a href="#"> 好雄食品专营店</a>
+							</div>
+							<div class="more"><span><a href="#">更多美味更多品味</a></span></div>
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/4_20180409141520_43.jpg" />
+						</div>
+						<!--内容  头部右边-->
+						<div class="content fl">
+							<!-- [商城]豪雄 薄皮核桃250gx3袋
+                             https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg
+                             88-->
+							<a href="#" class="liks_img fr"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg" /></a>
+							<div class="qty fr">
+								<a href="#">[商城]豪雄 薄皮核桃250gx3袋</a><br />
+								<p>￥<span>88</span></p>
+							</div>
+
+						</div>
+					</div>
+					<!--底部-->
+					<div class="boutique_footer clearfix">
+						<!--单个商品-->
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg
+							[商城]豪雄 黄冰糖454gx4袋
+							89-->
+
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7846/15167846L.jpg" />
+							<a href="#">[商城]豪雄 黄冰糖454gx4袋</a><br />
+							<p>￥<span>89</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg
+							豪雄 椴背黑木耳200gx2包
+                            128-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/49/15/79/491579L.jpg" />
+							<a href="#">豪雄 椴背黑木耳200gx2包</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+						<div class="item_0 fl">
+							<!--https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg
+							[商城]豪雄 茶树菇200gx2袋
+							118-->
+							<img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/7850/15167850L.jpg" />
+							<a href="#">[商城]豪雄 茶树菇200gx2袋</a><br />
+							<p>￥<span>128</span></p>
+
+						</div>
+
+					</div>
+				</div>
+				<!--店铺４END-->
+
+			</div>
+
+		</div>
+		<!--商城有限END-->
+
+		<!--猜你喜欢-->
+
+		<div class="like">
+			<div class="container">
+				<!--标题-->
+				<div class="title">
+					猜你喜欢
+					<!--<span><a href="#">瑞士CURAPROX牙刷</a></span>-->
+					<a class="fr button">更多商品</a>
+				</div>
+				<!--商品列表-->
+				<div class="goodlist clearfix">
+					<!--单个商品-->
+					<div class="time_0">
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/1377/15161377-L.jpg" alt="" /></a>
+						<div class="text">
+							<a href="#">赛普瑞斯 双面煎不粘锅具套组</a>
+						</div>
+						<p>￥<span>599</span></p>
+					</div>
+					<!--单个商品-->
+					<div class="time_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/18/9681/15189681L.jpg
+						浪莎 秋冬季舒柔加厚加绒一体裤6件组
+						298-->
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/18/9681/15189681L.jpg" alt="" /></a>
+						<div class="text">
+							<a href="#">浪莎 秋冬季舒柔加厚加绒一体裤6件组</a>
+						</div>
+						<p>￥<span>298</span></p>
+					</div>
+					<!--单个商品-->
+					<div class="time_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/19/8528/15198528-L.jpg
+						奔腾(POVOS) 旋转式3D剃须刀 劲爆组
+						199-->
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/8528/15198528-L.jpg" alt="" /></a>
+						<div class="text">
+							<a href="#">奔腾(POVOS) 旋转式3D剃须刀 劲爆组</a>
+						</div>
+						<p>￥<span>199</span></p>
+					</div>
+					<!--单个商品-->
+					<div class="time_0">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/20/1788/15201788L.jpg
+						蓓琳娜 西班牙进口葡萄籽油1Lx2瓶装
+						149-->
+
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/1788/15201788L.jpg" alt="" /></a>
+						<div class="text">
+							<a href="#">蓓琳娜 西班牙进口葡萄籽油1Lx2瓶装</a>
+						</div>
+						<p>￥<span>149</span></p>
+					</div>
+					<div class="time_0 left">
+						<!--https://cdnimg.ocj.com.cn/item_images/item/15/17/9869/15179869L.jpg
+						惠扬 （电视团购）南美白虾仁（特大）200g*8包 家庭组合
+						238-->
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/9869/15179869L.jpg" alt="" /></a>
+						<div class="text">
+							<a href="#">惠扬 （电视团购）南美白虾仁（特大）200g*8包 家庭组合</a>
+						</div>
+						<p>￥<span>238</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--猜你喜欢END-->
+		<!--会员区-->
+		<div class="members_area">
+			<div class="container clearfix">
+				<!--左边  会员特权-->
+				<div class="prerogative fl">
+					<div class="prerogative_banner"></div>
+					<div class="prerogative_bottom">
+						<div class="title">会员特权</div>
+						<div class="icon_box">
+							<ul class="clearfix">
+								<li>
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731180900_24.png" alt="" />
+										</a>
+									</div>
+									<span>签到</span>
+
+								</li>
+								<li>
+
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182429_22.png" alt="" />
+										</a>
+									</div>
+									<span>福利派</span>
+
+								</li>
+								<li>
+
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182553_63.png" alt="" />
+										</a>
+									</div>
+									<span>会员特价</span>
+
+								</li>
+								<li>
+
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182622_93.png" alt="" />
+										</a>
+									</div>
+									<span>寿星专区</span>
+
+								</li>
+								<li>
+
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182724_9.png" alt="" />
+										</a>
+									</div>
+									<span>鸥点乐园</span>
+
+								</li>
+								<li>
+
+									<div class="icon">
+										<a href="#">
+											<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182658_58.png" alt="" />
+										</a>
+									</div>
+									<span>更多工艺</span>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!--右边   会员特价-->
+				<div class="member_specials fr">
+					<div class="nav_ clearfix">
+						<ul class="clearfix">
+							<li class="last">会员特价</li>
+							<li>福利派</li>
+							<li>鸥点乐园</li>
+						</ul>
+						<img src="img/会员.png" style="width: 98%;" />
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--会员区END-->
+
+		<!--底部-->
+
+		<div class="bottom">
+			<div class="bottom_top container f12">
+				<div class="fl bottom_top_left">
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">订购指南</li>
+							<li>
+								<a href="#">注册会员</a>
+							</li>
+							<li>
+								<a href="#">订购方式</a>
+							</li>
+							<li>
+								<a href="#">交换/退货</a>
+							</li>
+							<li>
+								<a href="#">发票指南</a>
+							</li>
+							<li>
+								<a href="#">节能补贴</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">支付配送</li>
+							<li>
+								<a href="#">支付方式</a>
+							</li>
+							<li>
+								<a href="#">配送时间</a>
+							</li>
+							<li>
+								<a href="#">配送范围</a>
+							</li>
+							<li>
+								<a href="#">免费配送</a>
+							</li>
+							<li>
+								<a href="#">有关验货</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">顾客中心</li>
+							<li>
+								<a href="#">使用条款</a>
+							</li>
+							<li>
+								<a href="#">积分规则</a>
+							</li>
+							<li>
+								<a href="#">退换货政策</a>
+							</li>
+							<li>
+								<a href="#">信息保护</a>
+							</li>
+							<li>
+								<a href="#">更正说明</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">会员社区</li>
+							<li>
+								<a href="#">会员权益</a>
+							</li>
+							<li>
+								<a href="#">会员俱乐部</a>
+							</li>
+							<li>
+								<a href="#">便民中心</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">特色服务</li>
+							<li>
+								<a href="#">分期付款</a>
+							</li>
+							<li>
+								<a href="#">企业团购</a>
+							</li>
+							<li>
+								<a href="#">营销联盟</a>
+							</li>
+							<li>
+								<a href="#">上门服务</a>
+							</li>
+							<li>
+								<a href="#">免费退换货</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom_top_list">
+						<h4></h4>
+						<ul>
+							<li class="bottom_top_titel">商家合作</li>
+							<li>
+								<a href="#">合作招商</a>
+							</li>
+							<li>
+								<a href="#">合作伙伴</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fr bottom_top_rightbox">
+					<div class="bottom_top_right">
+						<h4 class="fl">公告事项</h4>
+						<div class="fl">
+							<a href="#">节目状况：</a>
+						</div>
+						<span class="fr">
+                        <a href="#">更多</a>
+                    </span>
+					</div>
+					<div>
+						<img src="img/notice1.jpg" alt="">
+						<img src="img/notice2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="bottom_down f12 container">
+				<div class="bottom_dfmz">
+					<a href="http://www.opg.cn/ ">
+						<img src="img/logo_dfmz.png" alt="">
+					</a>
+				</div>
+				<div>
+					<p>
+						上海东方电视购物有限公司 版权所有 &nbsp; &nbsp; &nbsp; Copyright © 2004-2018 ocj.com.cn All Rights Reserved
+					</p>
+					<p>上海800-708-8000（固话） &nbsp; &nbsp; &nbsp; （021）51119900（手机） &nbsp; &nbsp; &nbsp; 全国800-708-8000（固话） &nbsp; &nbsp; &nbsp; 400-889-8000（手机）
+					</p>
+					<p>
+						<span>
+                        信息系统安全等级保护评定备案证明编号 31001099027-00001
+                    </span>
+						<span>信息网络传播视听节目许可证：0908230 &nbsp; &nbsp; &nbsp;互联网药品信息服务资格证书（沪）- 非经营性 - 2014-0031
+                    </span>
+					</p>
+				</div>
+				<div class="bottom_down_ul">
+					<ul>
+						<li>
+							<a href="http://www.miibeian.gov.cn/"><img src="http://cdnimg.ocj.com.cn/common/images/gawb.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="https://ss.knet.cn/verifyseal.dll?sn=e140522310110492160kf8000000&amp;ct=df&amp;a=1&amp;pa=0.10243289501786723"><img src="http://cdnimg.ocj.com.cn/common/images/img.footer.icon.1.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111011170737657"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" alt=""></a>
+						</li>
+						<li>
+							<a href="http://www.zx110.org/"><img src="http://cdnimg.ocj.com.cn/common/images/img.footer.icon.3.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="https://online.unionpay.com/"><img src="http://cdnimg.ocj.com.cn/common/images/img.footer.icon.4.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="https://www.alipay.com/"><img src="http://cdnimg.ocj.com.cn/common/images/img.footer.icon.8.jpg" alt=""></a>
+						</li>
+						<li>
+							<a hhref="http://shwg.dianping.com/"><img src="http://cdnimg.ocj.com.cn/common/images/img.footer.icon.9.jpg" alt=""></a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--底部END-->
+
+		<!--固定栏  返回顶部-->
+		<div class="fixation">
+			<div class="content">有时间再写内容</div>
+			<div class="toTop">
+				<i></i><span>返回顶部</span>
+			</div>
+		</div>
+		<!--固定栏  返回顶部END-->
+
+		<!--js-->
+		<script src="js/index.js"></script>
+
+	</body>
+
+</html>

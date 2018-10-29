@@ -1,0 +1,1322 @@
+@charset "UTF-8";
+/*主体颜色*/
+/*黑色*/
+/*a标签字体大小*/
+/*蓝色*/
+a:hover {
+  text-decoration: underline;
+}
+
+/*nav下面的轮播图*/
+.navContent .container {
+  /*右边二级导航*/
+  /*中间 热销 以及轮播图*/
+}
+
+.navContent .container .navigate {
+  position: relative;
+  background: #fff;
+  opacity: 0.9;
+  z-index: 10;
+  /*hover*/
+  /*隐藏*/
+}
+
+.navContent .container .navigate a {
+  color: #000;
+}
+
+.navContent .container .navigate a:hover {
+  color: darkturquoise;
+}
+
+.navContent .container .navigate .navigate_0 {
+  overflow: hidden;
+  padding-top: 6px;
+  width: 205px;
+  padding-left: 15px;
+}
+
+.navContent .container .navigate .navigate_0:hover {
+  margin-top: -4px;
+}
+
+.navContent .container .navigate .navigate_0:hover .mask {
+  display: block;
+}
+
+.navContent .container .navigate .navigate_0:hover .hover {
+  border: 2px solid #ccc;
+  border-right: 0;
+}
+
+.navContent .container .navigate .hover {
+  width: 205px;
+  height: 34.6px;
+  line-height: 34px;
+}
+
+.navContent .container .navigate .hover a {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.navContent .container .navigate .mask {
+  display: none;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  background: #fff;
+  padding: 0 10px 0 15px;
+  width: 900px;
+}
+
+.navContent .container .navigate .mask_l .mask_0 {
+  padding: 10px;
+  width: 280px;
+}
+
+.navContent .container .navigate .mask_l .mask_0 h3 {
+  height: 34px;
+  line-height: 34px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.navContent .container .navigate .mask_l .mask_0 ul li {
+  height: 24px;
+  line-height: 24px;
+}
+
+.navContent .container .navigate .mask_l .mask_0 ul li a {
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+.navContent .container .navigate .mask_l .mask_0 ul li .last {
+  color: darkturquoise;
+}
+
+.navContent .container .navigate .mask_r img {
+  width: 295px;
+  height: 295px;
+}
+
+.navContent .container .navigate .special .TVGW,
+.navContent .container .navigate .special .TG,
+.navContent .container .navigate .special .QQG,
+.navContent .container .navigate .special .SC {
+  width: 200px;
+  height: 36px;
+  padding: 0 10px;
+}
+
+.navContent .container .navigate .special .TVGW .solid,
+.navContent .container .navigate .special .TG .solid,
+.navContent .container .navigate .special .QQG .solid,
+.navContent .container .navigate .special .SC .solid {
+  border-bottom: 1px dotted #fff;
+}
+
+.navContent .container .navigate .TVGW {
+  background: url(../img/special4.png) center;
+}
+
+.navContent .container .navigate .TVGW:hover .mask {
+  display: block;
+}
+
+.navContent .container .navigate .SC {
+  background: url(../img/special2.png) center;
+}
+
+.navContent .container .navigate .TG {
+  background: url(../img/special1.png) center;
+}
+
+.navContent .container .navigate .QQG {
+  background: url(../img/special3.png) center;
+}
+
+.navContent .container .hotSell {
+  position: relative;
+  /*大轮播*/
+  /*小轮播1*/
+  /*小轮播2*/
+}
+
+.navContent .container .hotSell .live {
+  width: 968px;
+  height: 90px;
+  background: blanchedalmond;
+}
+
+.navContent .container .hotSell .banner_box {
+  position: relative;
+  width: 730px;
+  height: 500px;
+}
+
+.navContent .container .hotSell .banner_box .page {
+  position: absolute;
+  left: 46%;
+  min-width: 300px;
+}
+
+.navContent .container .hotSell .banner_box .banner {
+  width: 1920px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.navContent .container .hotSell .smallHot {
+  position: absolute;
+  right: 0;
+  width: 250px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.navContent .container .hotSell .smallHot_t {
+  width: 250px;
+  height: 245px;
+  position: absolute;
+  top: 0;
+}
+
+.navContent .container .hotSell .smallHot_t img {
+  height: 100%;
+}
+
+.navContent .container .hotSell .smallHot_b {
+  width: 250px;
+  height: 245px;
+  position: absolute;
+  bottom: 0;
+}
+
+.navContent .container .hotSell .smallHot_b img {
+  height: 100%;
+}
+
+/*nav下面的轮播图END*/
+/*主播推荐*/
+.anchor_recommend .container {
+  padding-top: 20px;
+  /*标题*/
+  /*文字与图片介绍*/
+}
+
+.anchor_recommend .container .title {
+  height: 32px;
+  padding: 0 0 13px 10px;
+  font-size: 24px;
+}
+
+.anchor_recommend .container .title span {
+  margin-left: 10px;
+}
+
+.anchor_recommend .container .title span a {
+  font-size: 12px;
+  color: #000;
+}
+
+.anchor_recommend .container .title span a:hover {
+  text-decoration: underline;
+  color: darkturquoise;
+}
+
+.anchor_recommend .container .introduction {
+  background-color: #fff;
+  width: 420px;
+  border: 1px solid #ccc;
+  margin-top: 1px;
+  margin-right: 20px;
+  /*轮播图*/
+  /*价格*/
+  /*说明*/
+}
+
+.anchor_recommend .container .introduction:hover {
+  border: 1px solid red;
+}
+
+.anchor_recommend .container .introduction a {
+  display: block;
+}
+
+.anchor_recommend .container .introduction img {
+  width: 418px;
+  height: 418px;
+}
+
+.anchor_recommend .container .introduction .introduce {
+  font-size: 14px;
+  color: #2c2c2c;
+  text-align: left;
+  padding: 8px 0 8px 5px;
+  position: relative;
+}
+
+.anchor_recommend .container .introduction .introduce a {
+  color: #000;
+}
+
+.anchor_recommend .container .introduction .page {
+  position: absolute;
+  right: 150px;
+}
+
+.anchor_recommend .container .introduction .qty {
+  font-size: 16px;
+  color: #ea0505;
+  text-align: left;
+  padding: 8px 0 0 0;
+  font-weight: bold;
+  font-family: "Arial";
+}
+
+.anchor_recommend .container .introduction .explain {
+  padding: 15px 15px 24px;
+  border-top: 1px dotted #b2b2b2;
+  margin-top: 20px;
+}
+
+.anchor_recommend .container .introduction .hTitle {
+  color: #2c2c2c;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.anchor_recommend .container .introduction .explain_text {
+  padding: 15px;
+  border: 1px solid #b2b2b2;
+  background-color: #f7f7f7;
+  color: #2c2c2c;
+  font-size: 14px;
+  line-height: 18px;
+  height: auto;
+  overflow: hidden;
+}
+
+/*主播推荐END*/
+/*主要类容的商品列表公共样式   主播推荐 &&   && 团购    &&  全球购 */
+.goodslist {
+  float: left;
+  display: inline;
+  position: relative;
+  width: 748px;
+  height: auto;
+  font-size: 12px;
+  COLOR: #333;
+}
+
+.goodslist .goods_0 {
+  float: left;
+  display: inline;
+  border: 1px solid #e8e6e6;
+  width: 220px;
+  height: 305px;
+  padding: 8px;
+  background: #ffffff;
+  margin-right: 17px;
+}
+
+.goodslist .goods_0:hover {
+  border: 1px solid red;
+}
+
+.goodslist .goods_last {
+  margin: 0;
+}
+
+.goodslist .goods_botton {
+  margin-top: 17px;
+}
+
+.goodslist .image_links {
+  display: block;
+  width: 100%;
+  height: 220px;
+  color: #000;
+}
+
+.goodslist .text_links {
+  display: block;
+  padding: 12px 0 8px 4px;
+  color: #000;
+}
+
+.goodslist p {
+  color: #f12e24;
+  font-weight: bold;
+}
+
+.goodslist img {
+  height: 220px;
+  width: 220px;
+}
+
+/*主要类容的商品列表公共样式END*/
+/*团购   &&  全球购*/
+.groupon,
+.Metao {
+  /*标题*/
+  /*page定位*/
+  /*左边主要图片*/
+  /*右边商品列表*/
+}
+
+.groupon .title,
+.Metao .title {
+  padding-top: 20px;
+  font-size: 24px;
+  color: #424242;
+  padding-left: 10px;
+  padding-bottom: 13px;
+}
+
+.groupon .title span,
+.Metao .title span {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #727272;
+}
+
+.groupon .Metao_banner,
+.Metao .Metao_banner {
+  position: relative;
+}
+
+.groupon .page,
+.Metao .page {
+  position: absolute;
+  right: 150px;
+}
+
+.groupon .master_map,
+.Metao .master_map {
+  width: 418px;
+  height: 321px;
+  margin-right: 20px;
+}
+
+.groupon .master_map .links_img,
+.Metao .master_map .links_img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 9px 9px 0 9px;
+}
+
+.groupon .master_map a,
+.Metao .master_map a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.groupon .master_map a img,
+.Metao .master_map a img {
+  width: 100%;
+}
+
+.groupon .goodslist,
+.Metao .goodslist {
+  width: 748px;
+  height: 323px;
+}
+
+/*团购   &&  全球购 END*/
+/* 中央轮播图*/
+.centers {
+  margin-top: 33px;
+}
+
+.centers .banner_box {
+  width: 100%;
+  height: 130px;
+  background: yellow;
+}
+
+/* 中央轮播图END*/
+/* 食品饮料      &&  家居厨房   && 3C家电   &&    时尚服饰*/
+.fashion {
+  margin-bottom: 30px;
+}
+
+.food_drink,
+.home_kitchen,
+.appliance,
+.fashion {
+  margin-top: 30px;
+  /* 标题    */
+  /* 主要介绍*/
+  /* 轮播图*/
+  /* 商品列表  */
+  /*家居厨房  右边内容*/
+  /*3C家电  右边内容*/
+  /*时尚服饰  右边内容*/
+}
+
+.food_drink .title,
+.home_kitchen .title,
+.appliance .title,
+.fashion .title {
+  height: 32px;
+  padding: 0 0 13px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.food_drink .title .button,
+.home_kitchen .title .button,
+.appliance .title .button,
+.fashion .title .button {
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+}
+
+.food_drink .title .button:hover,
+.home_kitchen .title .button:hover,
+.appliance .title .button:hover,
+.fashion .title .button:hover {
+  border: 1px solid darkturquoise;
+  color: darkturquoise;
+}
+
+.food_drink .title span,
+.home_kitchen .title span,
+.appliance .title span,
+.fashion .title span {
+  margin-left: 10px;
+}
+
+.food_drink .title span a,
+.home_kitchen .title span a,
+.appliance .title span a,
+.fashion .title span a {
+  font-size: 12px;
+  color: #000;
+}
+
+.food_drink .title span a:hover,
+.home_kitchen .title span a:hover,
+.appliance .title span a:hover,
+.fashion .title span a:hover {
+  text-decoration: underline;
+  color: darkturquoise;
+}
+
+.food_drink .main_introduction,
+.home_kitchen .main_introduction,
+.appliance .main_introduction,
+.fashion .main_introduction {
+  border: 1px solid #ccc;
+  margin-right: 1px;
+  width: 290px;
+  /* 食品饮料 小图标*/
+}
+
+.food_drink .main_introduction .icon_box,
+.home_kitchen .main_introduction .icon_box,
+.appliance .main_introduction .icon_box,
+.fashion .main_introduction .icon_box {
+  width: 290px;
+}
+
+.food_drink .main_introduction .icon_box .icon_0,
+.home_kitchen .main_introduction .icon_box .icon_0,
+.appliance .main_introduction .icon_box .icon_0,
+.fashion .main_introduction .icon_box .icon_0 {
+  text-align: center;
+  float: left;
+  display: inline;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  width: 95px;
+  height: 116px;
+  border-top: none;
+  border-right: none;
+}
+
+.food_drink .main_introduction .icon_box .icon_0 a,
+.home_kitchen .main_introduction .icon_box .icon_0 a,
+.appliance .main_introduction .icon_box .icon_0 a,
+.fashion .main_introduction .icon_box .icon_0 a {
+  color: #000;
+}
+
+.food_drink .main_introduction .icon_box .icon_0 a:hover,
+.home_kitchen .main_introduction .icon_box .icon_0 a:hover,
+.appliance .main_introduction .icon_box .icon_0 a:hover,
+.fashion .main_introduction .icon_box .icon_0 a:hover {
+  color: darkturquoise;
+}
+
+.food_drink .main_introduction .icon_box .icon_img,
+.home_kitchen .main_introduction .icon_box .icon_img,
+.appliance .main_introduction .icon_box .icon_img,
+.fashion .main_introduction .icon_box .icon_img {
+  width: 95px;
+  height: 82px;
+  text-align: center;
+  line-height: 82px;
+  font-size: 0;
+}
+
+.food_drink .banner_box,
+.home_kitchen .banner_box,
+.appliance .banner_box,
+.fashion .banner_box {
+  width: 290px;
+  height: 350px;
+}
+
+.food_drink .banner_box .page,
+.home_kitchen .banner_box .page,
+.appliance .banner_box .page,
+.fashion .banner_box .page {
+  position: absolute;
+  left: 40%;
+}
+
+.food_drink .food_drink_goodslist,
+.food_drink .home_kitchen_goodslist,
+.food_drink .appliance_goodslist,
+.home_kitchen .food_drink_goodslist,
+.home_kitchen .home_kitchen_goodslist,
+.home_kitchen .appliance_goodslist,
+.appliance .food_drink_goodslist,
+.appliance .home_kitchen_goodslist,
+.appliance .appliance_goodslist,
+.fashion .food_drink_goodslist,
+.fashion .home_kitchen_goodslist,
+.fashion .appliance_goodslist {
+  position: relative;
+  display: inline;
+  width: 896px;
+  height: auto;
+}
+
+.food_drink .food_drink_goodslist .goods_0,
+.food_drink .home_kitchen_goodslist .goods_0,
+.food_drink .appliance_goodslist .goods_0,
+.home_kitchen .food_drink_goodslist .goods_0,
+.home_kitchen .home_kitchen_goodslist .goods_0,
+.home_kitchen .appliance_goodslist .goods_0,
+.appliance .food_drink_goodslist .goods_0,
+.appliance .home_kitchen_goodslist .goods_0,
+.appliance .appliance_goodslist .goods_0,
+.fashion .food_drink_goodslist .goods_0,
+.fashion .home_kitchen_goodslist .goods_0,
+.fashion .appliance_goodslist .goods_0 {
+  float: left;
+  width: 217px;
+  height: 279px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding-bottom: 11px;
+  text-align: center;
+}
+
+.food_drink .food_drink_goodslist .goods_0:hover,
+.food_drink .home_kitchen_goodslist .goods_0:hover,
+.food_drink .appliance_goodslist .goods_0:hover,
+.home_kitchen .food_drink_goodslist .goods_0:hover,
+.home_kitchen .home_kitchen_goodslist .goods_0:hover,
+.home_kitchen .appliance_goodslist .goods_0:hover,
+.appliance .food_drink_goodslist .goods_0:hover,
+.appliance .home_kitchen_goodslist .goods_0:hover,
+.appliance .appliance_goodslist .goods_0:hover,
+.fashion .food_drink_goodslist .goods_0:hover,
+.fashion .home_kitchen_goodslist .goods_0:hover,
+.fashion .appliance_goodslist .goods_0:hover {
+  border: 1px solid red;
+}
+
+.food_drink .food_drink_goodslist .goods_0 img,
+.food_drink .home_kitchen_goodslist .goods_0 img,
+.food_drink .appliance_goodslist .goods_0 img,
+.home_kitchen .food_drink_goodslist .goods_0 img,
+.home_kitchen .home_kitchen_goodslist .goods_0 img,
+.home_kitchen .appliance_goodslist .goods_0 img,
+.appliance .food_drink_goodslist .goods_0 img,
+.appliance .home_kitchen_goodslist .goods_0 img,
+.appliance .appliance_goodslist .goods_0 img,
+.fashion .food_drink_goodslist .goods_0 img,
+.fashion .home_kitchen_goodslist .goods_0 img,
+.fashion .appliance_goodslist .goods_0 img {
+  width: 215px;
+  height: 215px;
+}
+
+.food_drink .food_drink_goodslist .goods_0 .details,
+.food_drink .home_kitchen_goodslist .goods_0 .details,
+.food_drink .appliance_goodslist .goods_0 .details,
+.home_kitchen .food_drink_goodslist .goods_0 .details,
+.home_kitchen .home_kitchen_goodslist .goods_0 .details,
+.home_kitchen .appliance_goodslist .goods_0 .details,
+.appliance .food_drink_goodslist .goods_0 .details,
+.appliance .home_kitchen_goodslist .goods_0 .details,
+.appliance .appliance_goodslist .goods_0 .details,
+.fashion .food_drink_goodslist .goods_0 .details,
+.fashion .home_kitchen_goodslist .goods_0 .details,
+.fashion .appliance_goodslist .goods_0 .details {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.food_drink .food_drink_goodslist .goods_0 a,
+.food_drink .home_kitchen_goodslist .goods_0 a,
+.food_drink .appliance_goodslist .goods_0 a,
+.home_kitchen .food_drink_goodslist .goods_0 a,
+.home_kitchen .home_kitchen_goodslist .goods_0 a,
+.home_kitchen .appliance_goodslist .goods_0 a,
+.appliance .food_drink_goodslist .goods_0 a,
+.appliance .home_kitchen_goodslist .goods_0 a,
+.appliance .appliance_goodslist .goods_0 a,
+.fashion .food_drink_goodslist .goods_0 a,
+.fashion .home_kitchen_goodslist .goods_0 a,
+.fashion .appliance_goodslist .goods_0 a {
+  font-size: 12px;
+  color: #000;
+}
+
+.food_drink .food_drink_goodslist .goods_0 a:hover,
+.food_drink .home_kitchen_goodslist .goods_0 a:hover,
+.food_drink .appliance_goodslist .goods_0 a:hover,
+.home_kitchen .food_drink_goodslist .goods_0 a:hover,
+.home_kitchen .home_kitchen_goodslist .goods_0 a:hover,
+.home_kitchen .appliance_goodslist .goods_0 a:hover,
+.appliance .food_drink_goodslist .goods_0 a:hover,
+.appliance .home_kitchen_goodslist .goods_0 a:hover,
+.appliance .appliance_goodslist .goods_0 a:hover,
+.fashion .food_drink_goodslist .goods_0 a:hover,
+.fashion .home_kitchen_goodslist .goods_0 a:hover,
+.fashion .appliance_goodslist .goods_0 a:hover {
+  color: darkturquoise;
+}
+
+.food_drink .food_drink_goodslist .goods_0 p,
+.food_drink .home_kitchen_goodslist .goods_0 p,
+.food_drink .appliance_goodslist .goods_0 p,
+.home_kitchen .food_drink_goodslist .goods_0 p,
+.home_kitchen .home_kitchen_goodslist .goods_0 p,
+.home_kitchen .appliance_goodslist .goods_0 p,
+.appliance .food_drink_goodslist .goods_0 p,
+.appliance .home_kitchen_goodslist .goods_0 p,
+.appliance .appliance_goodslist .goods_0 p,
+.fashion .food_drink_goodslist .goods_0 p,
+.fashion .home_kitchen_goodslist .goods_0 p,
+.fashion .appliance_goodslist .goods_0 p {
+  text-align: left;
+  padding-left: 10px;
+  color: #f12e24;
+  font-weight: bold;
+}
+
+.food_drink .food_drink_goodslist .last,
+.food_drink .home_kitchen_goodslist .last,
+.food_drink .appliance_goodslist .last,
+.home_kitchen .food_drink_goodslist .last,
+.home_kitchen .home_kitchen_goodslist .last,
+.home_kitchen .appliance_goodslist .last,
+.appliance .food_drink_goodslist .last,
+.appliance .home_kitchen_goodslist .last,
+.appliance .appliance_goodslist .last,
+.fashion .food_drink_goodslist .last,
+.fashion .home_kitchen_goodslist .last,
+.fashion .appliance_goodslist .last {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.food_drink .food_drink_goodslist .right,
+.food_drink .home_kitchen_goodslist .right,
+.food_drink .appliance_goodslist .right,
+.home_kitchen .food_drink_goodslist .right,
+.home_kitchen .home_kitchen_goodslist .right,
+.home_kitchen .appliance_goodslist .right,
+.appliance .food_drink_goodslist .right,
+.appliance .home_kitchen_goodslist .right,
+.appliance .appliance_goodslist .right,
+.fashion .food_drink_goodslist .right,
+.fashion .home_kitchen_goodslist .right,
+.fashion .appliance_goodslist .right {
+  margin-right: 0;
+}
+
+.food_drink .food_drink_goodslist .details,
+.food_drink .home_kitchen_goodslist .details,
+.food_drink .appliance_goodslist .details,
+.home_kitchen .food_drink_goodslist .details,
+.home_kitchen .home_kitchen_goodslist .details,
+.home_kitchen .appliance_goodslist .details,
+.appliance .food_drink_goodslist .details,
+.appliance .home_kitchen_goodslist .details,
+.appliance .appliance_goodslist .details,
+.fashion .food_drink_goodslist .details,
+.fashion .home_kitchen_goodslist .details,
+.fashion .appliance_goodslist .details {
+  line-height: 18px;
+  height: 36px;
+  margin: 4px 0 3px 0;
+  padding: 0 0 0 5px;
+  overflow: hidden;
+}
+
+.food_drink .introduction_content,
+.home_kitchen .introduction_content,
+.appliance .introduction_content,
+.fashion .introduction_content {
+  width: 290px;
+  height: 228px;
+  overflow: hidden;
+  padding: 9px 10px 0 10px;
+  /*家居厨房  右边内容 推荐*/
+  /*家居厨房  右边内容 logo*/
+  /*家居厨房  右边内容   链接*/
+}
+
+.food_drink .introduction_content .recommend,
+.home_kitchen .introduction_content .recommend,
+.appliance .introduction_content .recommend,
+.fashion .introduction_content .recommend {
+  width: 290px;
+  background: url(../img/recommend.png) no-repeat;
+  height: 82px;
+  background-size: contain;
+  margin-left: 15px;
+  padding-left: 41px;
+}
+
+.food_drink .introduction_content .recommend a,
+.home_kitchen .introduction_content .recommend a,
+.appliance .introduction_content .recommend a,
+.fashion .introduction_content .recommend a {
+  display: block;
+  line-height: 24px;
+  line-height: 24px;
+  color: #000;
+}
+
+.food_drink .introduction_content .recommend a:hover,
+.home_kitchen .introduction_content .recommend a:hover,
+.appliance .introduction_content .recommend a:hover,
+.fashion .introduction_content .recommend a:hover {
+  color: darkturquoise;
+}
+
+.food_drink .introduction_content .logo img,
+.home_kitchen .introduction_content .logo img,
+.appliance .introduction_content .logo img,
+.fashion .introduction_content .logo img {
+  height: 35px;
+  width: 77px;
+  margin-left: 5px;
+}
+
+.food_drink .introduction_content .links,
+.home_kitchen .introduction_content .links,
+.appliance .introduction_content .links,
+.fashion .introduction_content .links {
+  margin-top: 17px;
+  width: 255px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.food_drink .introduction_content .links a,
+.home_kitchen .introduction_content .links a,
+.appliance .introduction_content .links a,
+.fashion .introduction_content .links a {
+  padding: 0 5px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+}
+
+.food_drink .introduction_content .links a:hover,
+.home_kitchen .introduction_content .links a:hover,
+.appliance .introduction_content .links a:hover,
+.fashion .introduction_content .links a:hover {
+  color: darkturquoise;
+}
+
+.food_drink .appliance_content,
+.home_kitchen .appliance_content,
+.appliance .appliance_content,
+.fashion .appliance_content {
+  width: 280px;
+  height: 228px;
+  padding: 9px 5px 0 5px;
+}
+
+.food_drink .appliance_content .logo,
+.home_kitchen .appliance_content .logo,
+.appliance .appliance_content .logo,
+.fashion .appliance_content .logo {
+  border-right: 1px dotted #ccc;
+  margin: 10px 0 0 8px;
+}
+
+.food_drink .appliance_content .logo div,
+.home_kitchen .appliance_content .logo div,
+.appliance .appliance_content .logo div,
+.fashion .appliance_content .logo div {
+  width: 80px;
+  height: 40px;
+  margin: 0 4px 13px 4px;
+}
+
+.food_drink .appliance_content .logo a,
+.home_kitchen .appliance_content .logo a,
+.appliance .appliance_content .logo a,
+.fashion .appliance_content .logo a {
+  display: block;
+}
+
+.food_drink .appliance_content .logo img,
+.home_kitchen .appliance_content .logo img,
+.appliance .appliance_content .logo img,
+.fashion .appliance_content .logo img {
+  width: 80px;
+}
+
+.food_drink .appliance_content .links,
+.home_kitchen .appliance_content .links,
+.appliance .appliance_content .links,
+.fashion .appliance_content .links {
+  float: left;
+  display: inline;
+  width: 160px;
+  margin: 13px 0 0 18px;
+}
+
+.food_drink .appliance_content .links_name,
+.home_kitchen .appliance_content .links_name,
+.appliance .appliance_content .links_name,
+.fashion .appliance_content .links_name {
+  font-size: 10px;
+  float: left;
+  display: inline;
+  color: #2c2c2c;
+  width: 80px;
+  margin-bottom: 10px;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.food_drink .appliance_content .links_name a,
+.home_kitchen .appliance_content .links_name a,
+.appliance .appliance_content .links_name a,
+.fashion .appliance_content .links_name a {
+  color: #000;
+}
+
+.food_drink .appliance_content .links_name a:hover,
+.home_kitchen .appliance_content .links_name a:hover,
+.appliance .appliance_content .links_name a:hover,
+.fashion .appliance_content .links_name a:hover {
+  color: darkturquoise;
+}
+
+.food_drink .fashion_content,
+.home_kitchen .fashion_content,
+.appliance .fashion_content,
+.fashion .fashion_content {
+  width: 280px;
+  overflow: hidden;
+  height: 232px;
+  padding: 2px 5px 3px 5px;
+}
+
+.food_drink .fashion_content .logo,
+.home_kitchen .fashion_content .logo,
+.appliance .fashion_content .logo,
+.fashion .fashion_content .logo {
+  width: 100%;
+}
+
+.food_drink .fashion_content .logo img,
+.home_kitchen .fashion_content .logo img,
+.appliance .fashion_content .logo img,
+.fashion .fashion_content .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.food_drink .fashion_content .logo_img,
+.home_kitchen .fashion_content .logo_img,
+.appliance .fashion_content .logo_img,
+.fashion .fashion_content .logo_img {
+  float: left;
+  width: 50%;
+  height: 58px;
+}
+
+/* 食品饮料END*/
+/*商城优选  右边内容*/
+.mall_optimization {
+  /*标题*/
+  /*专营店*/
+}
+
+.mall_optimization .title {
+  height: 32px;
+  padding: 0 0 13px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #000;
+}
+
+.mall_optimization .title a {
+  border: 1px solid #000;
+  width: 48px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  display: block;
+  font-size: 12px;
+  color: #000;
+}
+
+.mall_optimization .title a:hover {
+  text-decoration: underline;
+  color: darkturquoise;
+}
+
+.mall_optimization .boutique_0 {
+  float: left;
+  width: 590px;
+  height: 375px;
+  background: #fff;
+}
+
+.mall_optimization .boutique_left {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.mall_optimization .boutique_right {
+  margin-top: 10px;
+}
+
+.mall_optimization .boutique_head {
+  /*标题*/
+  /*更多*/
+  /*内容*/
+}
+
+.mall_optimization .boutique_head a {
+  color: #000;
+}
+
+.mall_optimization .boutique_head a:hover {
+  text-decoration: none;
+}
+
+.mall_optimization .boutique_head .logo {
+  position: relative;
+  width: 250px;
+  height: 145px;
+}
+
+.mall_optimization .boutique_head .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.mall_optimization .boutique_head .boutique_title {
+  height: 26px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.mall_optimization .boutique_head .more {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 26px;
+}
+
+.mall_optimization .boutique_head .more span {
+  display: inline-block;
+  padding: 10px 7px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 15px;
+  border: 1px solid #000;
+}
+
+.mall_optimization .boutique_head .more span:hover {
+  border: 1px solid red;
+  background: #fff;
+  opacity: 0.7;
+}
+
+.mall_optimization .boutique_head .more span:hover a {
+  color: red;
+}
+
+.mall_optimization .boutique_head .content {
+  width: 340px;
+  height: 145px;
+  background: #e9ecf0;
+}
+
+.mall_optimization .boutique_head .content .liks_img {
+  display: block;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.mall_optimization .boutique_head .content img {
+  width: 117px;
+  height: 117px;
+}
+
+.mall_optimization .boutique_head .content .qty {
+  float: right;
+  width: 170px;
+  margin-right: 15px;
+  margin-top: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+.mall_optimization .boutique_head .content .qty a {
+  color: #000;
+}
+
+.mall_optimization .boutique_head .content .qty a:hover {
+  color: darkturquoise;
+}
+
+.mall_optimization .boutique_footer {
+  width: 590px;
+  height: 200px;
+  padding: 20px 0 10px 0;
+}
+
+.mall_optimization .boutique_footer .item_0 {
+  background: #fff;
+  width: 170px;
+  height: 170px;
+  float: left;
+  margin: 0 13px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.mall_optimization .boutique_footer .item_0 a {
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: 156px;
+  color: #000;
+}
+
+.mall_optimization .boutique_footer .item_0 p {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mall_optimization .boutique_footer img {
+  width: 170px;
+  height: 170px;
+}
+
+/*猜你喜欢*/
+.like {
+  /*标题*/
+}
+
+.like .title {
+  height: 32px;
+  padding: 0 0 13px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #000;
+}
+
+.like .title a {
+  border: 1px solid #000;
+  width: 48px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  display: block;
+  font-size: 12px;
+  color: #000;
+}
+
+.like .title a:hover {
+  text-decoration: underline;
+  color: darkturquoise;
+}
+
+.like .goodlist {
+  margin-top: 8px;
+}
+
+.like .time_0 {
+  padding: 4px;
+  float: left;
+  width: 220px;
+  height: 284px;
+  margin-top: 1px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.like .time_0:hover {
+  border: 1px solid red;
+}
+
+.like .time_0 img {
+  width: 220p;
+  height: 220px;
+}
+
+.like .left {
+  margin-right: 0;
+}
+
+.like .text {
+  width: 100%;
+  height: 36px;
+  padding-left: 5px;
+  margin: 4px 0;
+}
+
+.like .text a {
+  color: #000;
+}
+
+.like p {
+  color: red;
+  font-weight: bold;
+}
+
+/*猜你喜欢END*/
+/*会员专区*/
+.members_area {
+  margin-top: 78px;
+}
+
+.members_area .left {
+  height: 323px;
+  width: 300px;
+  background: grey;
+}
+
+.members_area .prerogative_banner {
+  position: relative;
+}
+
+.members_area .prerogative_banner .page {
+  position: absolute;
+  left: 40%;
+}
+
+.members_area .prerogative_bottom {
+  padding-left: 14px;
+}
+
+.members_area .prerogative_bottom .title {
+  padding: 7px 0 7px 10px;
+}
+
+.members_area .icon_box {
+  text-align: center;
+}
+
+.members_area .icon_box li {
+  height: 66px;
+  width: 66px;
+  float: left;
+  padding-bottom: 12px;
+}
+
+.members_area .icon_box .icon {
+  width: 45px;
+  margin: 0 10px;
+}
+
+.members_area .icon_box img {
+  width: 45px;
+  height: 45px;
+}
+
+/*会员专区END*/
+/*底部 会员特价特价*/
+.member_specials {
+  width: 750px;
+  height: 323px;
+}
+
+.member_specials .nav_ {
+  padding-left: 33px;
+  border-bottom: 1px solid #000;
+  height: 50px;
+}
+
+.member_specials li {
+  float: left;
+  width: 149px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.member_specials li.last {
+  z-index: 10;
+  border: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*底部 会员特价特价END*/
+/*固定栏样式*/
+.fixation {
+  width: 84px;
+  height: 353px;
+  position: fixed;
+  bottom: 30px;
+}
+
+.fixation .content {
+  height: 323px;
+  width: 100%;
+  background: darkseagreen;
+}
+
+.fixation .toTop {
+  width: 84px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #4b4c50;
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+}
+
+/*固定栏样式END*/

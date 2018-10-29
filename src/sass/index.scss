@@ -1,0 +1,995 @@
+/*主体颜色*/
+
+$themeColor :#f12e24;
+
+/*黑色*/
+
+$aColor :#000;
+
+/*a标签字体大小*/
+
+$afontSize:12px;
+
+/*蓝色*/
+
+$ahoverColor:darkturquoise;
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+/*nav下面的轮播图*/
+
+.navContent {
+    .container {
+        /*右边二级导航*/
+        .navigate {
+            position: relative;
+            background: #fff;
+            opacity: 0.9;
+            z-index: 10;
+            a {
+                color: $aColor;
+                &:hover {
+                    color: $ahoverColor;
+                }
+            }
+            .navigate_0 {
+                overflow: hidden;
+                padding-top: 6px;
+                width: 205px;
+                padding-left: 15px;
+                &:hover {
+                    margin-top: -4px;
+                }
+                &:hover .mask {
+                    display: block;
+                }
+                &:hover .hover {
+                    border: 2px solid #ccc;
+                    border-right: 0;
+                }
+            }
+            //          
+            /*hover*/
+            .hover {
+                width: 205px;
+                height: 34.6px;
+                line-height: 34px;
+                a {
+                    font-size: 14px;
+                    margin-left: 8px;
+                }
+            }
+            /*隐藏*/
+            .mask {
+                display: none;
+                position: absolute;
+                left: 220px;
+                top: 0;
+                background: #fff;
+                padding: 0 10px 0 15px;
+                width: 900px;
+            }
+            .mask_l {
+                .mask_0 {
+                    padding: 10px;
+                    width: 280px;
+                    h3 {
+                        height: 34px;
+                        line-height: 34px;
+                        font-weight: bold;
+                        border-bottom: 1px solid #000;
+                    }
+                    ul li {
+                        height: 24px;
+                        line-height: 24px;
+                        a {
+                            padding: 0 4px;
+                            font-size: 12px;
+                        }
+                        .last {
+                            color: $ahoverColor;
+                        }
+                    }
+                }
+            }
+            .mask_r {
+                img {
+                    width: 295px;
+                    height: 295px;
+                }
+            }
+            .special {
+                .TVGW,
+                .TG,
+                .QQG,
+                .SC {
+                    width: 200px;
+                    height: 36px;
+                    padding: 0 10px;
+                    .solid {
+                        border-bottom: 1px dotted #fff;
+                    }
+                }
+            }
+            .TVGW {
+                background: url(../img/special4.png) center;
+                &:hover .mask {
+                    display: block;
+                }
+            }
+            .SC {
+                background: url(../img/special2.png) center;
+            }
+            .TG {
+                background: url(../img/special1.png) center;
+            }
+            .QQG {
+                background: url(../img/special3.png) center;
+            }
+        }
+        /*中间 热销 以及轮播图*/
+        .hotSell {
+            position: relative;
+            .live {
+                width: 968px;
+                height: 90px;
+                background: blanchedalmond;
+            }
+            /*大轮播*/
+            .banner_box {
+                position: relative;
+                width: 730px;
+                height: 500px;
+                .page {
+                    position: absolute;
+                    left: 46%;
+                    min-width: 300px;
+                }
+                .banner {
+                    width: 1920px;
+                    height: 500px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+            }
+            .smallHot {
+                position: absolute;
+                right: 0;
+                width: 250px;
+                height: 500px;
+                background-color: #fff;
+            }
+            /*小轮播1*/
+            .smallHot_t {
+                width: 250px;
+                height: 245px;
+                position: absolute;
+                top: 0;
+                img {
+                    height: 100%;
+                }
+            }
+            /*小轮播2*/
+            .smallHot_b {
+                width: 250px;
+                height: 245px;
+                position: absolute;
+                bottom: 0;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+/*nav下面的轮播图END*/
+
+
+/*主播推荐*/
+
+.anchor_recommend {
+    .container {
+        padding-top: 20px;
+        /*标题*/
+        .title {
+            height: 32px;
+            padding: 0 0 13px 10px;
+            font-size: 24px;
+            span {
+                margin-left: 10px;
+                a {
+                    font-size: 12px;
+                    color: $aColor;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $ahoverColor
+                    }
+                }
+            }
+        }
+        /*文字与图片介绍*/
+        .introduction {
+            background-color: #fff;
+            width: 420px;
+            border: 1px solid #ccc;
+            margin-top: 1px;
+            margin-right: 20px;
+            &:hover {
+                border: 1px solid red;
+            }
+            a {
+                display: block;
+            }
+            img {
+                width: 418px;
+                height: 418px;
+            }
+            /*轮播图*/
+            .introduce {
+                font-size: 14px;
+                color: #2c2c2c;
+                text-align: left;
+                padding: 8px 0 8px 5px;
+                position: relative;
+                a {
+                    color: $aColor;
+                }
+            }
+            .page {
+                position: absolute;
+                right: 150px;
+            }
+            /*价格*/
+            .qty {
+                font-size: 16px;
+                color: #ea0505;
+                text-align: left;
+                padding: 8px 0 0 0;
+                font-weight: bold;
+                font-family: "Arial";
+            }
+            /*说明*/
+            .explain {
+                padding: 15px 15px 24px;
+                border-top: 1px dotted #b2b2b2;
+                margin-top: 20px;
+            }
+            .hTitle {
+                color: #2c2c2c;
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .explain_text {
+                padding: 15px;
+                border: 1px solid #b2b2b2;
+                background-color: #f7f7f7;
+                color: #2c2c2c;
+                font-size: 14px;
+                line-height: 18px;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+/*主播推荐END*/
+
+
+/*主要类容的商品列表公共样式   主播推荐 &&   && 团购    &&  全球购 */
+
+.goodslist {
+    float: left;
+    display: inline;
+    position: relative;
+    width: 748px;
+    height: auto;
+    font-size: 12px;
+    COLOR: #333;
+    /// 
+    .goods_0 {
+        float: left;
+        display: inline;
+        border: 1px solid #e8e6e6;
+        width: 220px;
+        height: 305px;
+        padding: 8px;
+        background: #ffffff;
+        margin-right: 17px;
+        &:hover {
+            border: 1px solid red;
+        }
+    }
+    .goods_last {
+        margin: 0;
+    }
+    .goods_botton {
+        margin-top: 17px;
+    }
+    .image_links {
+        display: block;
+        width: 100%;
+        height: 220px;
+        color: $aColor;
+    }
+    .text_links {
+        display: block;
+        padding: 12px 0 8px 4px;
+        color: $aColor;
+    }
+    p {
+        color: $themeColor;
+        font-weight: bold;
+    }
+    img {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+
+/*主要类容的商品列表公共样式END*/
+
+
+/*团购   &&  全球购*/
+
+.groupon,
+.Metao {
+    /*标题*/
+    .title {
+        padding-top: 20px;
+        font-size: 24px;
+        color: #424242;
+        padding-left: 10px;
+        padding-bottom: 13px;
+        span {
+            margin-left: 30px;
+            font-size: 16px;
+            color: #727272;
+        }
+    }
+    /*page定位*/
+    .Metao_banner {
+        position: relative;
+    }
+    .page {
+        position: absolute;
+        right: 150px;
+    }
+    /*左边主要图片*/
+    .master_map {
+        width: 418px;
+        height: 321px;
+        margin-right: 20px;
+        .links_img {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 9px 9px 0 9px;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    /*右边商品列表*/
+    .goodslist {
+        width: 748px;
+        height: 323px;
+    }
+}
+
+
+/*团购   &&  全球购 END*/
+
+
+/* 中央轮播图*/
+
+.centers {
+    margin-top: 33px;
+    .banner_box {
+        width: 100%;
+        height: 130px;
+        background: yellow;
+    }
+}
+
+
+/* 中央轮播图END*/
+
+
+/* 食品饮料      &&  家居厨房   && 3C家电   &&    时尚服饰*/
+
+.fashion {
+    margin-bottom: 30px;
+}
+
+.food_drink,
+.home_kitchen,
+.appliance,
+.fashion {
+    margin-top: 30px;
+    /* 标题    */
+    .title {
+        height: 32px;
+        padding: 0 0 13px 10px;
+        font-size: 24px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 10px;
+        .button {
+            display: block;
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 8px;
+            border: 1px solid #ccc;
+            &:hover {
+                border: 1px solid $ahoverColor;
+                color: $ahoverColor;
+            }
+        }
+        span {
+            margin-left: 10px;
+            a {
+                font-size: 12px;
+                color: $aColor;
+                &:hover {
+                    text-decoration: underline;
+                    color: $ahoverColor
+                }
+            }
+        }
+    }
+    /* 主要介绍*/
+    .main_introduction {
+        border: 1px solid #ccc;
+        margin-right: 1px;
+        width: 290px;
+        /* 食品饮料 小图标*/
+        .icon_box {
+            width: 290px;
+            .icon_0 {
+                text-align: center;
+                float: left;
+                display: inline;
+                cursor: pointer;
+                border: 1px solid #e8e8e8;
+                width: 95px;
+                height: 116px;
+                border-top: none;
+                border-right: none;
+                a {
+                    color: $aColor;
+                    &:hover {
+                        color: $ahoverColor;
+                    }
+                }
+            }
+            .icon_img {
+                width: 95px;
+                height: 82px;
+                text-align: center;
+                line-height: 82px;
+                font-size: 0;
+            }
+        }
+    }
+    /* 轮播图*/
+    .banner_box {
+        width: 290px;
+        height: 350px;
+        .page {
+            position: absolute;
+            left: 40%;
+        }
+    }
+    /* 商品列表  */
+    .food_drink_goodslist,
+    .home_kitchen_goodslist,
+    .appliance_goodslist,
+    {
+        position: relative;
+        display: inline;
+        width: 896px;
+        height: auto;
+        .goods_0 {
+            float: left;
+            width: 217px;
+            height: 279px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            padding-bottom: 11px;
+            text-align: center;
+            &:hover {
+                border: 1px solid red;
+            }
+            img {
+                width: 215px;
+                height: 215px;
+            }
+            .details {
+                text-align: left;
+                padding: 0 5px;
+            }
+            a {
+                font-size: 12px;
+                color: $aColor;
+                &:hover {
+                    color: $ahoverColor;
+                }
+            }
+            p {
+                text-align: left;
+                padding-left: 10px;
+                color: $themeColor;
+                font-weight: bold;
+            }
+        }
+        .last {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .right {
+            margin-right: 0;
+        }
+        .details {
+            line-height: 18px;
+            height: 36px;
+            margin: 4px 0 3px 0;
+            padding: 0 0 0 5px;
+            overflow: hidden;
+        }
+    }
+    /*家居厨房  右边内容*/
+    .introduction_content {
+        width: 290px;
+        height: 228px;
+        overflow: hidden;
+        padding: 9px 10px 0 10px;
+        /*家居厨房  右边内容 推荐*/
+        .recommend {
+            width: 290px;
+            background: url(../img/recommend.png) no-repeat;
+            height: 82px;
+            background-size: contain;
+            margin-left: 15px;
+            padding-left: 41px;
+            a {
+                display: block;
+                line-height: 24px;
+                line-height: 24px;
+                color: $aColor;
+                &:hover {
+                    color: $ahoverColor;
+                }
+            }
+        }
+        /*家居厨房  右边内容 logo*/
+        .logo {
+            img {
+                height: 35px;
+                width: 77px;
+                margin-left: 5px;
+            }
+        }
+        /*家居厨房  右边内容   链接*/
+        .links {
+            margin-top: 17px;
+            width: 255px;
+            height: auto;
+            margin-left: 15px;
+            a {
+                padding: 0 5px;
+                height: 24px;
+                line-height: 24px;
+                color: $aColor;
+                &:hover {
+                    color: $ahoverColor;
+                }
+            }
+        }
+    }
+    /*3C家电  右边内容*/
+    .appliance_content {
+        width: 280px;
+        height: 228px;
+        padding: 9px 5px 0 5px;
+        .logo {
+            border-right: 1px dotted #ccc;
+            margin: 10px 0 0 8px;
+            div {
+                width: 80px;
+                height: 40px;
+                margin: 0 4px 13px 4px;
+            }
+            a {
+                display: block;
+            }
+            img {
+                width: 80px;
+            }
+        }
+        .links {
+            float: left;
+            display: inline;
+            width: 160px;
+            margin: 13px 0 0 18px;
+        }
+        .links_name {
+            font-size: 10px;
+            float: left;
+            display: inline;
+            color: #2c2c2c;
+            width: 80px;
+            margin-bottom: 10px;
+            word-break: keep-all;
+            white-space: nowrap;
+            a {
+                color: $aColor;
+                &:hover {
+                    color: $ahoverColor;
+                }
+            }
+        }
+    }
+    /*时尚服饰  右边内容*/
+    .fashion_content {
+        width: 280px;
+        overflow: hidden;
+        height: 232px;
+        padding: 2px 5px 3px 5px;
+        .logo {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .logo_img {
+            float: left;
+            width: 50%;
+            height: 58px;
+        }
+    }
+}
+
+
+/* 食品饮料END*/
+
+
+/*商城优选  右边内容*/
+
+.mall_optimization {
+    /*标题*/
+    .title {
+        height: 32px;
+        padding: 0 0 13px 10px;
+        font-size: 24px;
+        border-bottom: 1px solid #000;
+        a {
+            border: 1px solid $aColor;
+            width: 48px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+            display: block;
+            font-size: 12px;
+            color: $aColor;
+            &:hover {
+                text-decoration: underline;
+                color: $ahoverColor
+            }
+        }
+    }
+    /*专营店*/
+    .boutique_0 {
+        float: left;
+        width: 590px;
+        height: 375px;
+        background: #fff;
+    }
+    .boutique_left {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .boutique_right {
+        margin-top: 10px;
+    }
+    .boutique_head {
+        a {
+            color: $aColor;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .logo {
+            position: relative;
+            width: 250px;
+            height: 145px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        /*标题*/
+        .boutique_title {
+            height: 26px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+        }
+        /*更多*/
+        .more {
+            span {
+                display: inline-block;
+                padding: 10px 7px;
+                height: 22px;
+                line-height: 22px;
+                border-radius: 15px;
+                border: 1px solid #000;
+                &:hover {
+                    border: 1px solid red;
+                    background: #fff;
+                    opacity: 0.7;
+                }
+                &:hover a {
+                    color: red;
+                }
+            }
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 26px;
+        }
+        /*内容*/
+        .content {
+            width: 340px;
+            height: 145px;
+            background: #e9ecf0;
+            .liks_img {
+                display: block;
+                margin-right: 15px;
+                margin-top: 15px;
+            }
+            img {
+                width: 117px;
+                height: 117px;
+            }
+            .qty {
+                float: right;
+                width: 170px;
+                margin-right: 15px;
+                margin-top: 40px;
+                color: red;
+                font-weight: bold;
+                a {
+                    color: $aColor;
+                    &:hover {
+                        color: $ahoverColor
+                    }
+                }
+            }
+        }
+    }
+    .boutique_footer {
+        width: 590px;
+        height: 200px;
+        padding: 20px 0 10px 0;
+        .item_0 {
+            background: #fff;
+            width: 170px;
+            height: 170px;
+            float: left;
+            margin: 0 13px;
+            padding-bottom: 30px;
+            position: relative;
+            a {
+                font-size: 12px;
+                display: block;
+                position: absolute;
+                top: 156px;
+                color: $aColor;
+            }
+            p {
+                color: red;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        img {
+            width: 170px;
+            height: 170px;
+        }
+    }
+}
+
+
+/*猜你喜欢*/
+
+.like {
+    /*标题*/
+    .title {
+        height: 32px;
+        padding: 0 0 13px 10px;
+        font-size: 24px;
+        border-bottom: 1px solid #000;
+        a {
+            border: 1px solid $aColor;
+            width: 48px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+            display: block;
+            font-size: 12px;
+            color: $aColor;
+            &:hover {
+                text-decoration: underline;
+                color: $ahoverColor
+            }
+        }
+    }
+    .goodlist {
+        margin-top: 8px;
+    }
+    .time_0 {
+        padding: 4px;
+        float: left;
+        width: 220px;
+        height: 284px;
+        margin-top: 1px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        &:hover {
+            border: 1px solid red;
+        }
+        img {
+            width: 220p;
+            height: 220px;
+        }
+    }
+    .left {
+        margin-right: 0;
+    }
+    .text {
+        width: 100%;
+        height: 36px;
+        padding-left: 5px;
+        margin: 4px 0;
+        a {
+            color: $aColor;
+        }
+    }
+    p {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+
+/*猜你喜欢END*/
+
+
+/*会员专区*/
+
+.members_area {
+    margin-top: 78px;
+    .left {
+        height: 323px;
+        width: 300px;
+        background: grey;
+    }
+    .prerogative_banner {
+        position: relative;
+        .page {
+            position: absolute;
+            left: 40%;
+        }
+    }
+    .prerogative_bottom {
+        padding-left: 14px;
+        .title {
+            padding: 7px 0 7px 10px;
+        }
+    }
+    .icon_box {
+        li {
+            height: 66px;
+            width: 66px;
+            float: left;
+            padding-bottom: 12px;
+        }
+        text-align: center;
+        .icon {
+            width: 45px;
+            margin: 0 10px;
+        }
+        img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+
+/*会员专区END*/
+
+
+/*底部 会员特价特价*/
+
+.member_specials {
+    width: 750px;
+    height: 323px;
+   
+    .nav_ {
+        padding-left: 33px;
+        border-bottom: 1px solid #000;
+        height: 50px;
+    }
+    li {
+        float: left;
+        width: 149px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    li.last {
+        z-index: 10;
+        border: 1px solid #000;
+        border-bottom: 1px solid #fff;
+        border-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+
+/*底部 会员特价特价END*/
+
+
+/*固定栏样式*/
+
+.fixation {
+    width: 84px;
+    height: 353px;
+    position: fixed;
+    bottom: 30px;
+    .content {
+        height: 323px;
+        width: 100%;
+        background: darkseagreen;
+    }
+    .toTop {
+        width: 84px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #4b4c50;
+        position: absolute;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+
+/*固定栏样式END*/
+

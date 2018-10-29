@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/com_head.css" />
+		<link rel="stylesheet" type="text/css" href="../css/com_footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+
+	</head>
+
+	<body>
+		<!--js写入-->
+		<div id="head_box"></div>
+
+		<!--中间-->
+		<div class="main_box">
+			<div class="container clearfix">
+				<!--头部-->
+				<div class="main_t">
+					<div class="main_nav clearfix">
+						<div class="item_0">新用户注册</div>
+						<div class="item_0">电视顾客注册</div>
+						<div class="registered">我已经注册，现在就
+							<a href="#">登录</a>
+						</div>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="main_l">
+					<div class="regist_device clearfix">
+						<div class="phone clearfix">
+							<h3><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_mobile_icon.png"/>手机注册<span>(推荐)</span></h3>
+							<a href="#">使用邮箱注册 ></a>
+						</div>
+
+						<div class="form">
+							<!--1-->
+							<div class="item_0 clearfix">
+
+								<div class="label">
+									*手机号码:
+								</div>
+								<div class="field">
+									<input type="username" class="username" />
+								</div>
+								<div class="verify_status username_reminder"></div>
+								<!--提示-->
+							</div>
+							<!--2-->
+							<div class="item_0 clearfix">
+								<div class="label">
+									*短信验证码:
+								</div>
+								<div class="field">
+									<input type="text" class="note" style=" width: 138px;" />
+								</div>
+								<div class="clearfix  get_code_embellish">
+									<span class="hide">免费获取验证码</span>
+									<a class="get_code">免费获取验证码</a>
+								</div>
+								
+								<div class="verify_status get_code_reminder"></div>
+								<!--提示-->
+							</div>
+							<!--3-->
+							<div class="item_0 clearfix">
+								<div class="label">
+									*密码:
+								</div>
+								<div class="feld">
+									<input type="password" class="password" />
+								</div>
+
+								<div class=" verify_status password_reminder"></div>
+								<!--提示-->
+							</div>
+							<!--4-->
+							<div class="item_0 clearfix">
+								<div class="label">
+									*确认密码:
+								</div>
+								<div class="field">
+									<input type="password" class="affirm_password" />
+								</div>
+								<div class="verify_status affirm_password_reminder"></div>
+								<!--提示-->
+							</div>
+
+							<!--密码强度-->
+							<table style="width:120px;margin:5px 115px;">
+								<tbody>
+									<tr>
+										<td id="level_password" class="pw-strength  pw-defule">
+											<div class="pw-bar"></div>
+											<div class="pw-bar-on"></div>
+											<div class="pw-txt">
+												<span>弱</span>
+												<span>中</span>
+												<span>强</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!--同意并阅读-->
+							<div class="item_0 clearfix">
+								<span class="label"></span>
+								<div class="field consent ">
+									<label><input type="checkbox" >&nbsp;我已阅读并同意<a href="#" >东方CJ网络服务使用条款</a></label>
+								</div>
+							</div>
+							<!--提交-->
+							<div class="submit" style="margin-left:120px ; margin-top: 6px;"><input type="button" class="button" style="background:url(../img/register_submit.png);background-size:contain ; width: 300px; height: 35px; border: 0 none; "></div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--二维码-->
+				<div class="main_r fr" style="background:rgb(193,220,237)">
+					<div class="rightbar" >
+						<div class="qrcode_box">
+							<p class="txt_info txt_info1" style="text-align: center;">扫一扫，关注我们</p>
+							<div class="port" style="text-align: center;"><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_nv_qrcode1.jpg" width="142" height="142"></div>
+							<p class="txt_info txt_info2" style="text-align: center;">微信服务号：OCJ_FW<br>关注并绑定账户送5元积分</p>
+							<div class="port" style="text-align: center;"><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_nv_qrcode2.jpg" width="142" height="142"></div>
+							<p class="txt_info txt_info3" style="text-align: center;">下载移动客户端<br>新人首购TV商品最高减200元</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--js写入-->
+		<div id="footer_box"></div>
+		<!--js-->
+		<script src="../lib/jquery-3.2.1.js"></script>
+		<script src="../js/com_head.js"></script>
+		<script src="../js/register.js"></script>
+			
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>通过 数据库查询用户名是否存在</title>
+	<!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>-->
+
+<script type="text/javascript">
+		/*
+			练习：实现注册成功后跳转到登录页面，并输入用户名密码登录
+		 */
+
+	
+	//思路 : 返回yes说明没有被注册过 可以写入数据库
+	     // 返回no  说明已经被注册  不能再次注册
+	     
+	//【注】避免同名提交   点击注册完成后返回false   
+	//【注】php 代码注意不要有分隔符
+	     
+	     
+	
+	document.addEventListener('DOMContentLoaded',()=>{
+		let username = document.querySelector('#username');
+		let password = document.querySelector('#password');		
+		let btnReg = document.querySelector('#btnReg');
+		let status = [200,304];
+	    let isok = false;
+		
+		//注册
+		btnReg.onclick = ()=>{
+			
+	
+			if(!isok){
+				console.log(isok)
+			
+				return false;
+			}
+	
+			
+				let _username = username.value;
+				let _password = password.value;
+				
+			
+				
+				let xhr = new XMLHttpRequest();
+				
+				xhr.onload = ()=>{
+					if(status.indexOf(xhr.status)>=0){
+						
+//						window.location.href=  encodeURI('http://localhost:7070/html/reg_win.html?username='+_username);
+                      
+
+
+						isok = false;
+					}
+									
+				}
+				xhr.open('get','../aip/username.php',true);
+				
+				//设置请求头  post请求都要设置
+			    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+				
+				xhr.send("username="+_username+"&password="+_password);
+			
+		}	
+		//判断用户名知否存在
+		username.onblur = ()=>{	
+			let _username = username.value;
+			
+			let xhr_bl = new XMLHttpRequest();
+
+				xhr_bl.onload = ()=>{
+					if(status.indexOf(xhr_bl.status) >= 0){
+						
+						let formGroup = username.parentNode;						
+						//用户名不纯在可以注册
+						if(xhr_bl.responseText == 'yes'){
+							console.log(666)
+							isok = true;
+
+                           	// 成功：添加has-success类
+							formGroup.classList.remove('has-error');
+							formGroup.classList.add('has-success');
+							username.nextElementSibling.innerText = '';
+						
+						
+						}
+						//用户名纯在不能注册
+						else if(xhr_bl.responseText == 'no'){
+							
+							isok = false;
+							formGroup.classList.remove('has-success');
+							formGroup.classList.add('has-error');
+							username.nextElementSibling.innerText = '用户名已存在';
+						}
+					}
+				}
+				console.log(isok)
+			
+			xhr_bl.open('get',"../api/username.php?username="+_username);	
+			
+			xhr_bl.send();
+	
+			
+		}
+	})
+</script>
+
+
+</head>
+<body>
+	<div class="container">
+			<div class="form">
+				<div class="form_group"><!--has-success 成功-->
+					<label for="username">用户名:</label>
+					<input type="text" name="username" id="username" class="form-control" />
+				    <span class="help-block"></span>
+				</div>
+				<div class="form-group">
+					<label for="password">密码：</label>
+					<input type="password"id="password" name="password" class="form-control"/>
+				</div>
+				<div class="form-group">
+				   <button class="btn btn-success" id="btnReg">注册</button>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

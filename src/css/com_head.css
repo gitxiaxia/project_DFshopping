@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*主体颜色*/
+/*黑色*/
+/*a标签字体大小*/
+/*蓝色*/
+a:hover {
+  text-decoration: underline;
+}
+
+/*头部*/
+.top {
+  background: #f6f6f6;
+  height: 34px;
+}
+
+.top a {
+  color: #000;
+}
+
+.top img {
+  height: 30px;
+  line-height: 40px;
+}
+
+.top .top_l li {
+  float: left;
+  padding: 4px 5px 0 5px;
+}
+
+.top .top_r {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.top .top_r .my > div {
+  height: 32px;
+}
+
+.top .top_r .my .top_mask_ul {
+  background: #fff;
+  display: none;
+  z-index: 10;
+  position: absolute;
+  width: 122px;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+.top .top_r .my .top_mask_ul li {
+  height: 34px;
+  line-height: 34px;
+}
+
+.top .top_r .my .top_mask_ul li:hover a {
+  color: darkturquoise;
+}
+
+.top .top_r .weixin {
+  position: relative;
+  z-index: 10;
+}
+
+.top .top_r .weixin .top_mask_img {
+  width: 222px;
+  height: 222px;
+  display: none;
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
+/*头部END*/
+/*logo*/
+.logo .container {
+  padding-top: 10px;
+}
+
+.logo .logo_l h1 .logo1 {
+  padding: 0 30px 0 10px;
+}
+
+.logo .logo_l h1 .logo1 img {
+  width: 140px;
+  height: 74px;
+}
+
+.logo .logo_l h1 .logo2 {
+  padding-top: 6px;
+}
+
+.logo .logo_l h1 .logo2 img {
+  width: 210px;
+  height: 70px;
+}
+
+.logo .logo_c {
+  padding: 12px 0 0 41px;
+  width: 450px;
+  height: 70px;
+}
+
+.logo .logo_c input {
+  border: 0px;
+  height: 34px;
+  width: 367px;
+  display: block;
+}
+
+.logo .logo_c button {
+  width: 77px;
+  height: 100%;
+  background: #f12e24;
+  color: #fff;
+  display: block;
+}
+
+.logo .logo_c .input {
+  border: 3px solid #f12e24;
+  width: 450px;
+  height: 34px;
+}
+
+.logo .logo_c .hotSell_r span {
+  display: block;
+  padding-left: 23px;
+  background: url(../img/logo1.png) no-repeat;
+}
+
+.logo .logo_c .hotSell_r a {
+  font-size: 12px;
+  color: #000;
+}
+
+.logo .logo_c .hotSell_l a {
+  padding: 0 3px;
+  font-size: 12px;
+  color: #000;
+}
+
+.logo .logo_r {
+  position: relative;
+}
+
+.logo .logo_r .car {
+  width: 120px;
+  height: 40px;
+  background-color: #F7F7F7;
+  padding: 0 10px;
+  margin-top: 12px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.logo .logo_r .car .qty {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #f12e24;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: -5px;
+}
+
+.logo .logo_r .car .car_l {
+  width: 29px;
+  height: 29px;
+  background: url(../img/logo2.png) no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.logo .logo_r .car .car_c {
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  color: #000;
+  font-size: 12px;
+}
+
+.logo .logo_r .car .car_r {
+  width: 18px;
+  height: 18px;
+  background: url(../img/logo3.png) no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 110px;
+}
+
+.logo .logo_r .car_show {
+  width: 280px;
+  height: auto;
+  position: absolute;
+  background: #fff;
+  top: 52px;
+  left: -262px;
+  line-height: 34px;
+  min-height: 80px;
+  padding: 10px 60px 10px 60px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+/*logoEND*/
+/*导航条*/
+.nav {
+  background: #f12e24;
+}
+
+.nav .nav_l {
+  height: 34px;
+  width: 220px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.nav .nav_l h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav .nav_l h2:hover {
+  background: #b8362f;
+}
+
+.nav .nav_c ul li {
+  float: left;
+}
+
+.nav .nav_c ul li .last {
+  background: #b8362f;
+}
+
+.nav .nav_c ul li a {
+  height: 34px;
+  line-height: 34px;
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav .nav_c ul li a:hover {
+  background: #b8362f;
+  text-decoration: none;
+}
+
+/*导航条END*/
